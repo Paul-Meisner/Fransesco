@@ -22,10 +22,9 @@
             colors: {
               primary: '#1E3A8A',         // Deep Marian Navy
               'primary-hover': '#172554',
-              secondary: '#9D683C',       // Warm Chestnut / Bronze
-              'secondary-hover': '#82532B',
-              accent: '#A3B5B9',          // Dusty Slate Blue
-              'accent-light': '#EBF0F1',
+              secondary: '#9D683C',       // Warm Chestnut / Accent
+              btnColor: '#A3B5B9',        // Client's requested Button Color (#a3b5b9)
+              'btnColor-hover': '#8B9EA2',
               background: '#FDFBF7',      // Warm Cream background
               surface: '#F5F0EB',         // Soft Ivory surface
               'surface-border': '#E7E5E4',   // Soft Warm Gray border
@@ -42,7 +41,6 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Zero out any potential default element margins causing white space */
         html, body {
             margin: 0 !important;
             padding: 0 !important;
@@ -77,27 +75,27 @@
     }
     </script>
 </head>
-<body class="bg-background text-text font-body antialiased selection:bg-secondary selection:text-white m-0 p-0">
+<body class="bg-background text-text font-body antialiased selection:bg-btnColor selection:text-primary m-0 p-0">
 
-    <!-- TOP STRATEGY BANNER (FLUSH WITH TOP - NO WHITE SPACE ABOVE) -->
+    <!-- TOP STRATEGY BANNER -->
     <aside aria-label="Strategy Summary" class="bg-primary text-white border-b border-primary-hover px-4 py-2.5 text-xs m-0">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
             <div class="flex items-center space-x-2 text-center sm:text-left">
-                <span class="bg-secondary px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-white">Catholic Life Coaching</span>
+                <span class="bg-btnColor text-primary font-bold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Catholic Life Coaching</span>
                 <span class="text-white/90 text-xs font-medium">Faith-based guidance for marriage, motherhood & vocation.</span>
             </div>
             <!-- Quick Social Media Header Links -->
             <div class="flex items-center space-x-4 text-white/90 font-medium">
-                <span class="hidden md:inline text-[11px] text-accent">Connect with Sharon:</span>
-                <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" class="hover:text-accent transition-colors flex items-center space-x-1" aria-label="Facebook">
+                <span class="hidden md:inline text-[11px] text-btnColor">Connect with Sharon:</span>
+                <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" class="hover:text-btnColor transition-colors flex items-center space-x-1" aria-label="Facebook">
                     <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
                     <span class="text-[11px] hidden sm:inline">Facebook</span>
                 </a>
-                <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" class="hover:text-accent transition-colors flex items-center space-x-1" aria-label="Instagram">
+                <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" class="hover:text-btnColor transition-colors flex items-center space-x-1" aria-label="Instagram">
                     <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                     <span class="text-[11px] hidden sm:inline">Instagram</span>
                 </a>
-                <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="hover:text-accent transition-colors flex items-center space-x-1" aria-label="Spotify Podcast">
+                <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="hover:text-btnColor transition-colors flex items-center space-x-1" aria-label="Spotify Podcast">
                     <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
                     <span class="text-[11px] hidden sm:inline">Podcast</span>
                 </a>
@@ -105,7 +103,7 @@
         </div>
     </aside>
 
-    <!-- NAVIGATION BAR WITH WORKING MOBILE HAMBURGER -->
+    <!-- NAVIGATION BAR -->
     <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-surface-border m-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -130,27 +128,28 @@
                     <a href="#faq" class="hover:text-primary transition-colors">FAQ</a>
                 </nav>
 
-                <!-- Desktop CTA & Social -->
+                <!-- Desktop CTA with Updated #a3b5b9 Button Color -->
                 <div class="hidden lg:flex items-center space-x-5">
                     <div class="flex items-center space-x-3 text-text-muted border-r border-surface-border pr-5">
-                        <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-secondary transition-colors p-1">
+                        <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-primary transition-colors p-1">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
                         </a>
-                        <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-secondary transition-colors p-1">
+                        <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-primary transition-colors p-1">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
-                        <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" aria-label="Spotify Podcast" class="hover:text-secondary transition-colors p-1">
+                        <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" aria-label="Spotify Podcast" class="hover:text-primary transition-colors p-1">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
                         </a>
                     </div>
-                    <a href="#options" class="px-5 py-2.5 rounded-full font-heading text-xs font-bold uppercase tracking-wider text-white bg-secondary hover:bg-secondary-hover transition-all shadow-md">
+                    <!-- Updated #a3b5b9 Button -->
+                    <a href="#options" class="px-5 py-2.5 rounded-full font-heading text-xs font-bold uppercase tracking-wider text-primary bg-btnColor hover:bg-btnColor-hover transition-all shadow-md">
                         Schedule Free Call
                     </a>
                 </div>
 
-                <!-- MOBILE HAMBURGER BUTTON (VISIBLE ON MOBILE/TABLET) -->
+                <!-- MOBILE HAMBURGER BUTTON -->
                 <div class="flex items-center space-x-3 lg:hidden">
-                    <a href="#options" class="px-3 py-1.5 rounded-full font-heading text-[11px] font-bold uppercase tracking-wider text-white bg-secondary">
+                    <a href="#options" class="px-3 py-1.5 rounded-full font-heading text-[11px] font-bold uppercase tracking-wider text-primary bg-btnColor shadow-sm">
                         Free Call
                     </a>
                     <button type="button" id="hamburger-btn" class="p-2 rounded-lg text-primary hover:bg-surface focus:outline-none" aria-label="Toggle Navigation Menu" onclick="toggleMobileMenu()">
@@ -165,7 +164,7 @@
             </div>
         </div>
 
-        <!-- MOBILE MENU DRAWER (RESPONSIVE DROPDOWN) -->
+        <!-- MOBILE MENU DRAWER -->
         <div id="mobile-menu" class="hidden lg:hidden bg-surface border-b-2 border-primary px-6 pt-4 pb-8 space-y-4 shadow-xl">
             <nav class="flex flex-col space-y-3 font-heading font-semibold text-base text-primary">
                 <a href="#about" onclick="toggleMobileMenu()" class="py-2 border-b border-surface-border/60 hover:text-secondary">Sharon's Story</a>
@@ -180,7 +179,7 @@
             </nav>
 
             <div class="pt-4 border-t border-surface-border space-y-4">
-                <a href="#options" onclick="toggleMobileMenu()" class="block w-full text-center py-3.5 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary-hover shadow-md">
+                <a href="#options" onclick="toggleMobileMenu()" class="block w-full text-center py-3.5 rounded-full font-heading text-sm font-bold text-primary bg-btnColor hover:bg-btnColor-hover shadow-md">
                     Schedule Your Free Discovery Call
                 </a>
 
@@ -225,7 +224,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-accent/20 border border-accent/40 text-xs font-semibold text-primary">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-btnColor/20 border border-btnColor/40 text-xs font-semibold text-primary">
                         <span>Faith-Based Life Coaching for Women</span>
                     </div>
 
@@ -239,7 +238,8 @@
                     </p>
 
                     <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="#options" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary-hover shadow-lg transition-all text-center">
+                        <!-- Hero Primary Button in #a3b5b9 -->
+                        <a href="#options" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-bold text-primary bg-btnColor hover:bg-btnColor-hover shadow-lg transition-all text-center">
                             Schedule Your Free Discovery Call
                         </a>
                         <a href="#podcast" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-semibold text-primary border border-primary/30 hover:bg-surface transition-all text-center flex items-center justify-center space-x-2">
@@ -256,7 +256,7 @@
                 <!-- Hero Image -->
                 <div class="lg:col-span-5">
                     <div class="relative mx-auto max-w-md">
-                        <div class="absolute inset-0 bg-accent/30 rounded-3xl transform rotate-3 scale-105"></div>
+                        <div class="absolute inset-0 bg-btnColor/30 rounded-3xl transform rotate-3 scale-105"></div>
                         <img src="https://placehold.co/600x700/F5F0EB/1E3A8A?text=Sharon+Catholic+Life+Coach+For+Women" 
                              alt="Sharon, Catholic life coach for women, sitting in a warm, welcoming home office with a cup of tea." 
                              class="relative rounded-2xl shadow-xl border border-surface-border object-cover w-full h-[380px] sm:h-[420px]">
@@ -273,8 +273,8 @@
                 
                 <!-- Left Details -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-secondary text-white text-xs font-bold uppercase tracking-wider shadow">
-                        <svg class="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-btnColor text-primary font-bold text-xs uppercase tracking-wider shadow">
+                        <svg class="w-4 h-4 animate-pulse text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
                         <span>New Episode Every Thursday</span>
                     </div>
 
@@ -287,8 +287,9 @@
                     </p>
 
                     <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-bold text-primary bg-white hover:bg-surface shadow-xl transition-all inline-flex items-center justify-center space-x-3">
-                            <svg class="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                        <!-- Spotify Podcast Button with #a3b5b9 accent -->
+                        <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-bold text-primary bg-btnColor hover:bg-btnColor-hover shadow-xl transition-all inline-flex items-center justify-center space-x-3">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
                             <span>Listen Free on Spotify</span>
                         </a>
                     </div>
@@ -298,12 +299,12 @@
                 <div class="lg:col-span-5">
                     <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl space-y-4">
                         <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                            <span class="text-xs font-bold uppercase tracking-widest text-accent">Latest Audio Releases</span>
-                            <span class="bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">Thursdays</span>
+                            <span class="text-xs font-bold uppercase tracking-widest text-btnColor">Latest Audio Releases</span>
+                            <span class="bg-btnColor text-primary text-[10px] font-bold px-2.5 py-0.5 rounded-full">Thursdays</span>
                         </div>
 
                         <div class="bg-black/20 p-4 rounded-xl border border-white/10 space-y-2">
-                            <div class="flex items-center justify-between text-xs text-accent">
+                            <div class="flex items-center justify-between text-xs text-btnColor">
                                 <span>Recent Thursday Episode</span>
                                 <span>24 mins</span>
                             </div>
@@ -398,8 +399,8 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-stretch">
                 <!-- Option 1: Primary Recommended -->
-                <div class="bg-surface border-2 border-secondary rounded-3xl p-6 flex flex-col justify-between shadow-md relative mt-4 md:mt-0">
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secondary text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">
+                <div class="bg-surface border-2 border-btnColor rounded-3xl p-6 flex flex-col justify-between shadow-md relative mt-4 md:mt-0">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-btnColor text-primary text-[11px] font-bold uppercase tracking-widest px-3.5 py-1 rounded-full shadow">
                         Recommended Start
                     </div>
                     <div class="space-y-4 pt-2">
@@ -410,7 +411,7 @@
                         </p>
                     </div>
                     <div class="pt-6">
-                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-white bg-secondary hover:bg-secondary-hover transition-all">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary bg-btnColor hover:bg-btnColor-hover transition-all">
                             Book Free Call
                         </a>
                     </div>
@@ -426,7 +427,7 @@
                         </p>
                     </div>
                     <div class="pt-6">
-                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-primary hover:bg-surface transition-all">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-btnColor hover:bg-btnColor/20 transition-all">
                             Select Session
                         </a>
                     </div>
@@ -442,7 +443,7 @@
                         </p>
                     </div>
                     <div class="pt-6">
-                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-primary hover:bg-surface transition-all">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-btnColor hover:bg-btnColor/20 transition-all">
                             Learn More
                         </a>
                     </div>
@@ -458,7 +459,7 @@
                         </p>
                     </div>
                     <div class="pt-6">
-                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-primary hover:bg-surface transition-all">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-btnColor hover:bg-btnColor/20 transition-all">
                             Learn More
                         </a>
                     </div>
@@ -566,7 +567,8 @@
             </div>
 
             <div class="bg-background border border-surface-border p-6 sm:p-8 rounded-3xl shadow-xl max-w-lg mx-auto space-y-6">
-                <a href="#" class="block w-full py-4 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary-hover shadow-lg transition-all text-center">
+                <!-- Updated Call to Action Button in #a3b5b9 -->
+                <a href="#" class="block w-full py-4 rounded-full font-heading text-sm font-bold text-primary bg-btnColor hover:bg-btnColor-hover shadow-lg transition-all text-center">
                     Schedule Your Free Discovery Call
                 </a>
 
