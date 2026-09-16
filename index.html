@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth m-0 p-0">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Title (< 60 chars) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- SEO Title -->
     <title>Catholic Life Coach for Women | Sharon Coaching</title>
-    <!-- Meta Description (150-160 chars) -->
+    <!-- Meta Description -->
     <meta name="description" content="Find clarity, purpose, and peace in your faith, marriage, and motherhood with Sharon, a Catholic life coach for women. Schedule your free discovery call today.">
     <link rel="canonical" href="https://sharoncoaching.com/catholic-life-coach-for-women">
 
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     
-    <!-- Custom Tailwind Configuration with Updated Client Palette -->
+    <!-- Custom Tailwind Configuration -->
     <script>
       tailwind.config = {
         theme: {
@@ -22,9 +22,9 @@
             colors: {
               primary: '#1E3A8A',         // Deep Marian Navy
               'primary-hover': '#172554',
-              secondary: '#9D683C',       // Client's requested secondary color (Warm Chestnut)
+              secondary: '#9D683C',       // Warm Chestnut / Bronze
               'secondary-hover': '#82532B',
-              accent: '#A3B5B9',          // Client's requested accent color (Dusty Slate Blue)
+              accent: '#A3B5B9',          // Dusty Slate Blue
               'accent-light': '#EBF0F1',
               background: '#FDFBF7',      // Warm Cream background
               surface: '#F5F0EB',         // Soft Ivory surface
@@ -41,8 +41,17 @@
       }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Zero out any potential default element margins causing white space */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #FDFBF7;
+            overflow-x: hidden;
+        }
+    </style>
 
-    <!-- FAQ Schema Markup (JSON-LD) -->
+    <!-- FAQ Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -63,72 +72,41 @@
             "@type": "Answer",
             "text": "Mindset coaching focuses on identifying unhelpful thought patterns and replacing them with truth, allowing you to respond to life's challenges with grace, clarity, and intentionality."
           }
-        },
-        {
-          "@type": "Question",
-          "name": "How is coaching different from therapy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Therapy diagnoses and treats psychological conditions and past clinical trauma. Catholic life coaching focuses on present circumstances, future goals, thought habits, and practical action."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is coaching the same as spiritual direction?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Spiritual direction focuses directly on one's relationship with God and prayer life. Coaching focuses on practical daily decisions, personal goals, and mindset aligned with faith."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why would I need a coach if God is the one who changes us?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "God works through human means, community, and prudent counsel. Coaching provides accountability, structure, and clarity as you cooperate with God's grace in your daily life."
-          }
         }
       ]
     }
     </script>
 </head>
-<body class="bg-background text-text font-body antialiased selection:bg-secondary selection:text-white">
+<body class="bg-background text-text font-body antialiased selection:bg-secondary selection:text-white m-0 p-0">
 
-    <!-- STRATEGY BRIEF SUMMARY OVERVIEW (DOCUMENTATION SECTION) -->
-    <aside aria-label="Strategy Summary" class="bg-primary text-white border-b border-surface-border px-4 py-4">
-        <div class="max-w-7xl mx-auto text-xs leading-relaxed space-y-2">
-            <div class="flex flex-wrap items-center justify-between border-b border-white/20 pb-2 gap-2">
-                <span class="font-heading font-bold uppercase tracking-wider text-accent">Strategic Strategy Summary & Client Profile</span>
-                <div class="flex items-center space-x-3 text-white/80">
-                    <span>Connect with Sharon:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" class="hover:text-accent transition-colors" title="Facebook">FB</a>
-                    <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" class="hover:text-accent transition-colors" title="Instagram">IG</a>
-                    <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="hover:text-accent transition-colors" title="Spotify Podcast">Podcast</a>
-                </div>
+    <!-- TOP STRATEGY BANNER (FLUSH WITH TOP - NO WHITE SPACE ABOVE) -->
+    <aside aria-label="Strategy Summary" class="bg-primary text-white border-b border-primary-hover px-4 py-2.5 text-xs m-0">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center space-x-2 text-center sm:text-left">
+                <span class="bg-secondary px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-white">Catholic Life Coaching</span>
+                <span class="text-white/90 text-xs font-medium">Faith-based guidance for marriage, motherhood & vocation.</span>
             </div>
-            <div class="grid md:grid-cols-4 gap-4 pt-1">
-                <div>
-                    <strong class="text-accent block">The Ideal Client:</strong>
-                    A Catholic woman, mother, or wife who deeply loves her faith but feels overwhelmed, stuck, or uncertain in her daily vocation and identity.
-                </div>
-                <div>
-                    <strong class="text-accent block">Her Central Struggle:</strong>
-                    Juggling expectations, interior doubt, exhaustion, losing sight of her God-given design amidst marriage, motherhood, and work responsibilities.
-                </div>
-                <div>
-                    <strong class="text-accent block">Sharon’s Positioning:</strong>
-                    A compassionate peer who has walked through marriage, motherhood, returning to faith, and finding vocation—a fellow pilgrim.
-                </div>
-                <div>
-                    <strong class="text-accent block">Primary Conversion Goal:</strong>
-                    Scheduling a low-friction, zero-pressure 30-Minute Free Discovery Call to start an authentic relationship.
-                </div>
+            <!-- Quick Social Media Header Links -->
+            <div class="flex items-center space-x-4 text-white/90 font-medium">
+                <span class="hidden md:inline text-[11px] text-accent">Connect with Sharon:</span>
+                <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" class="hover:text-accent transition-colors flex items-center space-x-1" aria-label="Facebook">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                    <span class="text-[11px] hidden sm:inline">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" class="hover:text-accent transition-colors flex items-center space-x-1" aria-label="Instagram">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <span class="text-[11px] hidden sm:inline">Instagram</span>
+                </a>
+                <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="hover:text-accent transition-colors flex items-center space-x-1" aria-label="Spotify Podcast">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                    <span class="text-[11px] hidden sm:inline">Podcast</span>
+                </a>
             </div>
         </div>
     </aside>
 
-    <!-- NAVIGATION BAR -->
-    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-surface-border">
+    <!-- NAVIGATION BAR WITH WORKING MOBILE HAMBURGER -->
+    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-surface-border m-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Brand Logo -->
@@ -138,12 +116,12 @@
                     </div>
                     <div>
                         <span class="font-heading font-bold text-lg text-primary block leading-tight">Sharon</span>
-                        <span class="text-xs text-text-muted font-medium tracking-wide">Catholic Life Coach for Women</span>
+                        <span class="text-xs text-text-muted font-medium tracking-wide">Catholic Life Coach</span>
                     </div>
                 </a>
 
-                <!-- Desktop Links -->
-                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-text-muted">
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-text-muted">
                     <a href="#about" class="hover:text-primary transition-colors">Sharon's Story</a>
                     <a href="#podcast" class="hover:text-primary transition-colors">Podcast</a>
                     <a href="#how-it-works" class="hover:text-primary transition-colors">How It Works</a>
@@ -152,31 +130,98 @@
                     <a href="#faq" class="hover:text-primary transition-colors">FAQ</a>
                 </nav>
 
-                <!-- Social Media Links & Primary CTA -->
-                <div class="hidden md:flex items-center space-x-5">
-                    <!-- Social Icons Header -->
+                <!-- Desktop CTA & Social -->
+                <div class="hidden lg:flex items-center space-x-5">
                     <div class="flex items-center space-x-3 text-text-muted border-r border-surface-border pr-5">
-                        <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" aria-label="Sharon Coaching on Facebook" class="hover:text-secondary transition-colors p-1">
+                        <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-secondary transition-colors p-1">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
                         </a>
-                        <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" aria-label="Sharon Coaching on Instagram" class="hover:text-secondary transition-colors p-1">
+                        <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-secondary transition-colors p-1">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
-                        <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" aria-label="Sharon's Podcast on Spotify" class="hover:text-secondary transition-colors p-1">
+                        <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" aria-label="Spotify Podcast" class="hover:text-secondary transition-colors p-1">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
                         </a>
                     </div>
-
                     <a href="#options" class="px-5 py-2.5 rounded-full font-heading text-xs font-bold uppercase tracking-wider text-white bg-secondary hover:bg-secondary-hover transition-all shadow-md">
                         Schedule Free Call
+                    </a>
+                </div>
+
+                <!-- MOBILE HAMBURGER BUTTON (VISIBLE ON MOBILE/TABLET) -->
+                <div class="flex items-center space-x-3 lg:hidden">
+                    <a href="#options" class="px-3 py-1.5 rounded-full font-heading text-[11px] font-bold uppercase tracking-wider text-white bg-secondary">
+                        Free Call
+                    </a>
+                    <button type="button" id="hamburger-btn" class="p-2 rounded-lg text-primary hover:bg-surface focus:outline-none" aria-label="Toggle Navigation Menu" onclick="toggleMobileMenu()">
+                        <svg id="hamburger-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DRAWER (RESPONSIVE DROPDOWN) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-surface border-b-2 border-primary px-6 pt-4 pb-8 space-y-4 shadow-xl">
+            <nav class="flex flex-col space-y-3 font-heading font-semibold text-base text-primary">
+                <a href="#about" onclick="toggleMobileMenu()" class="py-2 border-b border-surface-border/60 hover:text-secondary">Sharon's Story</a>
+                <a href="#podcast" onclick="toggleMobileMenu()" class="py-2 border-b border-surface-border/60 hover:text-secondary flex items-center justify-between">
+                    <span>Podcast</span>
+                    <span class="text-[10px] bg-secondary text-white px-2 py-0.5 rounded-full uppercase">Thursdays</span>
+                </a>
+                <a href="#how-it-works" onclick="toggleMobileMenu()" class="py-2 border-b border-surface-border/60 hover:text-secondary">How It Works</a>
+                <a href="#options" onclick="toggleMobileMenu()" class="py-2 border-b border-surface-border/60 hover:text-secondary">Coaching Options</a>
+                <a href="#testimonials" onclick="toggleMobileMenu()" class="py-2 border-b border-surface-border/60 hover:text-secondary">Client Stories</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="py-2 hover:text-secondary">FAQ</a>
+            </nav>
+
+            <div class="pt-4 border-t border-surface-border space-y-4">
+                <a href="#options" onclick="toggleMobileMenu()" class="block w-full text-center py-3.5 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary-hover shadow-md">
+                    Schedule Your Free Discovery Call
+                </a>
+
+                <div class="flex items-center justify-center space-x-6 pt-2 text-primary">
+                    <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" class="flex items-center space-x-1.5 text-xs font-semibold hover:text-secondary">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" class="flex items-center space-x-1.5 text-xs font-semibold hover:text-secondary">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="flex items-center space-x-1.5 text-xs font-semibold hover:text-secondary">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                        <span>Podcast</span>
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                hamburgerIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        }
+    </script>
+
     <!-- HERO SECTION -->
-    <section class="relative py-16 lg:py-24 bg-gradient-to-b from-surface/60 via-background to-background">
+    <section class="relative py-12 lg:py-24 bg-gradient-to-b from-surface/60 via-background to-background">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
@@ -206,21 +251,6 @@
                     <p class="text-xs text-text-muted italic pt-1">
                         Free, 30 minutes, and zero pressure to enroll.
                     </p>
-
-                    <!-- Social proof & social follow in Hero -->
-                    <div class="pt-4 border-t border-surface-border flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-text-muted">
-                        <span class="font-medium">Connect on Social:</span>
-                        <div class="flex items-center space-x-3">
-                            <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" class="inline-flex items-center space-x-1.5 text-primary hover:text-secondary font-semibold">
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" class="inline-flex items-center space-x-1.5 text-primary hover:text-secondary font-semibold">
-                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                                <span>@sharonkcoaching</span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Hero Image -->
@@ -229,24 +259,21 @@
                         <div class="absolute inset-0 bg-accent/30 rounded-3xl transform rotate-3 scale-105"></div>
                         <img src="https://placehold.co/600x700/F5F0EB/1E3A8A?text=Sharon+Catholic+Life+Coach+For+Women" 
                              alt="Sharon, Catholic life coach for women, sitting in a warm, welcoming home office with a cup of tea." 
-                             class="relative rounded-2xl shadow-xl border border-surface-border object-cover w-full h-[420px]">
+                             class="relative rounded-2xl shadow-xl border border-surface-border object-cover w-full h-[380px] sm:h-[420px]">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURED PODCAST SECTION (NEW THURSDAY EPISODES) -->
-    <section id="podcast" class="py-20 bg-gradient-to-r from-primary via-primary-hover to-primary text-white relative overflow-hidden">
-        <!-- Subtle Pattern Accent -->
-        <div class="absolute inset-0 bg-[radial-gradient(#A3B5B9_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
-
+    <!-- FEATURED PODCAST SECTION -->
+    <section id="podcast" class="py-16 sm:py-20 bg-gradient-to-r from-primary via-primary-hover to-primary text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Left Details -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-secondary/90 text-white text-xs font-bold uppercase tracking-wider shadow">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-secondary text-white text-xs font-bold uppercase tracking-wider shadow">
                         <svg class="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
                         <span>New Episode Every Thursday</span>
                     </div>
@@ -255,82 +282,33 @@
                         The Sharon Coaching Podcast: Faith, Mindset & Vocation
                     </h2>
 
-                    <p class="text-white/80 text-base leading-relaxed">
+                    <p class="text-white/90 text-base leading-relaxed">
                         Tune in every Thursday for short, encouraging, and actionable conversations designed for Catholic women navigating marriage, motherhood, returning to faith, and personal growth.
                     </p>
 
-                    <!-- Key Topics & Release Tag -->
-                    <div class="grid sm:grid-cols-2 gap-3 text-xs text-white/90 font-medium pt-2">
-                        <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-lg border border-white/10">
-                            <span class="text-accent font-bold">&check;</span>
-                            <span>Overcoming Mindset & Thought Loops</span>
-                        </div>
-                        <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-lg border border-white/10">
-                            <span class="text-accent font-bold">&check;</span>
-                            <span>Faith in Marriage & Family Life</span>
-                        </div>
-                        <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-lg border border-white/10">
-                            <span class="text-accent font-bold">&check;</span>
-                            <span>Embracing Your Unique God-Given Design</span>
-                        </div>
-                        <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-lg border border-white/10">
-                            <span class="text-accent font-bold">&check;</span>
-                            <span>Practical Catholic Personal Development</span>
-                        </div>
-                    </div>
-
-                    <!-- CTA to Spotify -->
-                    <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                         <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-bold text-primary bg-white hover:bg-surface shadow-xl transition-all inline-flex items-center justify-center space-x-3">
                             <svg class="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
                             <span>Listen Free on Spotify</span>
                         </a>
-                        <span class="text-xs text-white/70 italic">Subscribe to never miss a Thursday release!</span>
                     </div>
                 </div>
 
-                <!-- Right Podcast Player Graphic / Preview -->
+                <!-- Right Podcast Card -->
                 <div class="lg:col-span-5">
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl space-y-5">
-                        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl space-y-4">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-accent">Latest Audio Releases</span>
-                            <span class="bg-secondary/80 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">Updated Thursdays</span>
+                            <span class="bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">Thursdays</span>
                         </div>
 
-                        <!-- Episode 1 Preview -->
-                        <div class="bg-black/20 p-4 rounded-xl border border-white/10 hover:border-accent transition-colors space-y-2">
+                        <div class="bg-black/20 p-4 rounded-xl border border-white/10 space-y-2">
                             <div class="flex items-center justify-between text-xs text-accent">
                                 <span>Recent Thursday Episode</span>
                                 <span>24 mins</span>
                             </div>
                             <h3 class="font-heading font-bold text-white text-sm">Surrendering the Need for Perfection in Catholic Motherhood</h3>
                             <p class="text-xs text-white/70">How replacing unrealistic self-expectations with God's grace brings immediate peace to your home.</p>
-                        </div>
-
-                        <!-- Episode 2 Preview -->
-                        <div class="bg-black/20 p-4 rounded-xl border border-white/10 hover:border-accent transition-colors space-y-2">
-                            <div class="flex items-center justify-between text-xs text-accent">
-                                <span>Popular Episode</span>
-                                <span>28 mins</span>
-                            </div>
-                            <h3 class="font-heading font-bold text-white text-sm">Finding Clarity in Seasons of Transition & Discernment</h3>
-                            <p class="text-xs text-white/70">Practical mindset tools for discerning meaningful work and balance during busy family years.</p>
-                        </div>
-
-                        <!-- Audio Wave Visualizer Placeholder -->
-                        <div class="pt-2 flex items-center justify-between bg-white/5 p-3 rounded-xl border border-white/10">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-white font-bold text-xs">
-                                    &#9654;
-                                </div>
-                                <span class="text-xs text-white/90 font-medium">Listen now on Spotify</span>
-                            </div>
-                            <div class="flex items-center space-x-1">
-                                <span class="w-1 h-4 bg-accent rounded-full animate-bounce"></span>
-                                <span class="w-1 h-6 bg-accent rounded-full animate-bounce [animation-delay:0.2s]"></span>
-                                <span class="w-1 h-3 bg-accent rounded-full animate-bounce [animation-delay:0.4s]"></span>
-                                <span class="w-1 h-5 bg-accent rounded-full animate-bounce [animation-delay:0.1s]"></span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -339,11 +317,11 @@
         </div>
     </section>
 
-    <!-- SHARON'S STORY & RELATABLE TRUST -->
-    <section id="about" class="py-20">
+    <!-- SHARON'S STORY -->
+    <section id="about" class="py-16 sm:py-20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-surface border border-surface-border rounded-3xl p-8 sm:p-12 shadow-sm space-y-8">
-                <div class="max-w-3xl space-y-4">
+            <div class="bg-surface border border-surface-border rounded-3xl p-6 sm:p-12 shadow-sm space-y-8">
+                <div class="max-w-3xl space-y-3">
                     <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">A Fellow Pilgrim On The Journey</h2>
                     <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-primary">I Don't Have a Perfect Life—And I Don't Expect You To Either</h3>
                 </div>
@@ -365,9 +343,6 @@
                         <p>
                             As a <strong>Catholic mindset coach</strong> and mentor, I don’t stand above you with all the answers. I stand beside you. I help women untangle the noise, recognize unhelpful thought loops, and step into the distinct, beautiful mission God tailored specifically for them.
                         </p>
-                        <p class="pt-2">
-                            <a href="#" class="text-primary font-bold hover:underline">Learn more about Sharon's story and background in Catholic Ministry &rarr;</a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -375,76 +350,57 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how-it-works" class="py-20 bg-surface/40">
+    <section id="how-it-works" class="py-16 sm:py-20 bg-surface/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Your Journey Forward</h2>
                 <h3 class="font-heading text-3xl font-extrabold text-primary">How Catholic Life Coaching Works</h3>
                 <p class="text-text-muted text-sm sm:text-base">A simple, structured, and compassionate 4-step path toward personal growth and clarity.</p>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 <!-- Step 1 -->
-                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
-                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
-                        01
-                    </div>
-                    <h4 class="font-heading font-bold text-lg text-primary">Step 1: Schedule a Free Discovery Call</h4>
-                    <p class="text-text-muted text-sm leading-relaxed">
-                        A low-key 30-minute conversation over the phone or Zoom. No pressure, no obligations—just a quiet space to connect and talk.
-                    </p>
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">01</div>
+                    <h4 class="font-heading font-bold text-lg text-primary">1. Schedule a Free Call</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">A low-key 30-minute discovery conversation over phone or Zoom with no obligations.</p>
                 </div>
-
                 <!-- Step 2 -->
-                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
-                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
-                        02
-                    </div>
-                    <h4 class="font-heading font-bold text-lg text-primary">Step 2: Share Challenges & Goals</h4>
-                    <p class="text-text-muted text-sm leading-relaxed">
-                        Tell me what’s feeling heavy—whether it’s Catholic motherhood coaching needs, marriage dynamics, or discerning work—and where you long to be.
-                    </p>
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">02</div>
+                    <h4 class="font-heading font-bold text-lg text-primary">2. Share Your Goals</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">Tell me what feels heavy in motherhood, marriage, or work, and where you desire clarity.</p>
                 </div>
-
                 <!-- Step 3 -->
-                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
-                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
-                        03
-                    </div>
-                    <h4 class="font-heading font-bold text-lg text-primary">Step 3: Choose Your Coaching Path</h4>
-                    <p class="text-text-muted text-sm leading-relaxed">
-                        Together, we’ll select the option that fits your pace, budget, and season of life—from a single session to a deeper multi-week series.
-                    </p>
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">03</div>
+                    <h4 class="font-heading font-bold text-lg text-primary">3. Choose Your Path</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">Select the option fitting your budget and season—from single sessions to deep transformations.</p>
                 </div>
-
                 <!-- Step 4 -->
-                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
-                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
-                        04
-                    </div>
-                    <h4 class="font-heading font-bold text-lg text-primary">Step 4: Move Forward in Faith</h4>
-                    <p class="text-text-muted text-sm leading-relaxed">
-                        Step into freedom with personalized support, practical tools, mindset shifts, and encouragement rooted firmly in Christ.
-                    </p>
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">04</div>
+                    <h4 class="font-heading font-bold text-lg text-primary">4. Move Forward in Faith</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">Step into clarity with personalized guidance, mindset tools, and encouragement in Christ.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- COACHING OPTIONS -->
-    <section id="options" class="py-20">
+    <section id="options" class="py-16 sm:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Flexible Options</h2>
                 <h3 class="font-heading text-3xl sm:text-4xl font-extrabold text-primary">Coaching Paths Tailored To Your Season</h3>
-                <p class="text-text-muted text-sm sm:text-base">Transparent pricing without high-pressure countdowns or false scarcity. Start where you feel comfortable.</p>
+                <p class="text-text-muted text-sm sm:text-base">Transparent pricing without pressure or false urgency.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-stretch">
                 <!-- Option 1: Primary Recommended -->
-                <div class="bg-surface border-2 border-secondary rounded-3xl p-6 flex flex-col justify-between shadow-md relative">
+                <div class="bg-surface border-2 border-secondary rounded-3xl p-6 flex flex-col justify-between shadow-md relative mt-4 md:mt-0">
                     <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secondary text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow">
-                        Recommended Starting Point
+                        Recommended Start
                     </div>
                     <div class="space-y-4 pt-2">
                         <h4 class="font-heading font-bold text-xl text-primary">Free Discovery Call</h4>
@@ -466,7 +422,7 @@
                         <h4 class="font-heading font-bold text-xl text-primary">Individual Session</h4>
                         <p class="text-xs font-semibold text-text-muted uppercase">60 Minutes &bull; $100</p>
                         <p class="text-text-muted text-sm leading-relaxed">
-                            Ideal for tackling a specific decision, working through a sudden hurdle, or getting focused clarity on an immediate issue.
+                            Ideal for tackling a specific decision, working through a sudden hurdle, or getting focused clarity.
                         </p>
                     </div>
                     <div class="pt-6">
@@ -482,7 +438,7 @@
                         <h4 class="font-heading font-bold text-xl text-primary">6-Week Transformation</h4>
                         <p class="text-xs font-semibold text-text-muted uppercase">Six 60-Min Sessions &bull; $480</p>
                         <p class="text-text-muted text-sm leading-relaxed">
-                            Deep dive into core mindset shifts, establishing holy habits, and overcoming persistent emotional or vocational hurdles.
+                            Deep dive into core mindset shifts, establishing holy habits, and overcoming persistent emotional hurdles.
                         </p>
                     </div>
                     <div class="pt-6">
@@ -498,7 +454,7 @@
                         <h4 class="font-heading font-bold text-xl text-primary">12-Week Transformation</h4>
                         <p class="text-xs font-semibold text-text-muted uppercase">Twelve 60-Min Sessions &bull; $950</p>
                         <p class="text-text-muted text-sm leading-relaxed">
-                            Comprehensive support for sustained personal development, Catholic marriage coaching themes, or major life shifts.
+                            Comprehensive support for sustained personal development, marriage themes, or major life shifts.
                         </p>
                     </div>
                     <div class="pt-6">
@@ -508,131 +464,73 @@
                     </div>
                 </div>
             </div>
-
-            <div class="mt-8 text-center">
-                <a href="#" class="text-xs font-semibold text-primary hover:underline">Explore detailed outlines of individual coaching & transformation packages &rarr;</a>
-            </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials" class="py-20 bg-surface/50 border-y border-surface-border/60">
+    <section id="testimonials" class="py-16 sm:py-20 bg-surface/50 border-y border-surface-border/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Verified Client Testimonials</h2>
-                <h3 class="font-heading text-3xl font-extrabold text-primary">Stories of Growth, Grace, and Identity in Christ</h3>
-                <p class="text-text-muted text-sm">Real experiences shared by women who have worked directly with Sharon.</p>
+                <h3 class="font-heading text-3xl font-extrabold text-primary">Stories of Growth and Identity in Christ</h3>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-background border border-surface-border p-8 rounded-2xl flex flex-col justify-between shadow-sm">
-                    <div class="space-y-4">
-                        <div class="text-secondary flex space-x-1">
-                            ★★★★★
-                        </div>
+                <div class="bg-background border border-surface-border p-6 sm:p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+                    <div class="space-y-3">
+                        <div class="text-secondary flex space-x-1">★★★★★</div>
                         <p class="text-text-muted text-sm italic leading-relaxed">
-                            "For the first time in years, I felt completely heard and understood without judgment. Sharon helped me recognize my unique, God-given design when I felt utterly lost in motherhood."
+                            "For the first time in years, I felt completely heard and understood without judgment. Sharon helped me recognize my unique, God-given design when I felt lost in motherhood."
                         </p>
                     </div>
-                    <div class="pt-6 border-t border-surface-border/60 mt-6">
+                    <div class="pt-4 border-t border-surface-border/60 mt-4">
                         <p class="font-heading font-bold text-sm text-primary">Maria C.</p>
-                        <p class="text-xs text-text-muted">Mother of Three &bull; Catholic Motherhood Coaching Client</p>
+                        <p class="text-xs text-text-muted">Mother of Three</p>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-background border border-surface-border p-8 rounded-2xl flex flex-col justify-between shadow-sm">
-                    <div class="space-y-4">
-                        <div class="text-secondary flex space-x-1">
-                            ★★★★★
-                        </div>
+                <div class="bg-background border border-surface-border p-6 sm:p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+                    <div class="space-y-3">
+                        <div class="text-secondary flex space-x-1">★★★★★</div>
                         <p class="text-text-muted text-sm italic leading-relaxed">
-                            "Sharon brought such profound encouragement and inspiration into my life. Her coaching provided greater self-awareness and rooted my confidence where it belonged—my true identity in Christ."
+                            "Sharon brought such profound encouragement and inspiration into my life. Her coaching provided greater self-awareness and rooted my confidence in Christ."
                         </p>
                     </div>
-                    <div class="pt-6 border-t border-surface-border/60 mt-6">
+                    <div class="pt-4 border-t border-surface-border/60 mt-4">
                         <p class="font-heading font-bold text-sm text-primary">Teresa K.</p>
-                        <p class="text-xs text-text-muted">Catholic Personal Development Client</p>
+                        <p class="text-xs text-text-muted">Coaching Client</p>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-background border border-surface-border p-8 rounded-2xl flex flex-col justify-between shadow-sm">
-                    <div class="space-y-4">
-                        <div class="text-secondary flex space-x-1">
-                            ★★★★★
-                        </div>
+                <div class="bg-background border border-surface-border p-6 sm:p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+                    <div class="space-y-3">
+                        <div class="text-secondary flex space-x-1">★★★★★</div>
                         <p class="text-text-muted text-sm italic leading-relaxed">
                             "Working with Sharon led to meaningful personal growth in my marriage and daily habits. She helped me reframe anxious thoughts into prayerful forward movement."
                         </p>
                     </div>
-                    <div class="pt-6 border-t border-surface-border/60 mt-6">
+                    <div class="pt-4 border-t border-surface-border/60 mt-4">
                         <p class="font-heading font-bold text-sm text-primary">Elena R.</p>
-                        <p class="text-xs text-text-muted">Catholic Marriage Coaching Client</p>
+                        <p class="text-xs text-text-muted">Marriage Coaching Client</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="mt-8 text-center">
-                <a href="#" class="text-xs font-semibold text-primary hover:underline">Read full length verified client reviews and personal transformation stories &rarr;</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- DISTINCTION SECTION: COACHING vs THERAPY vs SPIRITUAL DIRECTION -->
-    <section class="py-16 bg-background">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-surface border border-surface-border rounded-2xl p-8 space-y-6">
-                <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
-                        i
-                    </div>
-                    <h3 class="font-heading font-bold text-xl text-primary">Understanding Catholic Life Coaching</h3>
-                </div>
-
-                <p class="text-text-muted text-sm leading-relaxed">
-                    It is essential to understand the distinct scope of life coaching so you can choose the best support for your situation:
-                </p>
-
-                <div class="grid sm:grid-cols-2 gap-6 pt-2 text-xs text-text-muted leading-relaxed">
-                    <div class="bg-background p-4 rounded-xl border border-surface-border space-y-2">
-                        <strong class="text-primary font-bold block text-sm">What Coaching Focuses On:</strong>
-                        <ul class="list-disc list-inside space-y-1">
-                            <li>Forward movement, actionable goals, and habits</li>
-                            <li>Identifying unhelpful thought patterns and mindset blocks</li>
-                            <li>Discernment in daily vocation, marriage, and work</li>
-                        </ul>
-                    </div>
-                    <div class="bg-background p-4 rounded-xl border border-surface-border space-y-2">
-                        <strong class="text-secondary font-bold block text-sm">Important Boundaries:</strong>
-                        <ul class="list-disc list-inside space-y-1">
-                            <li>Does <strong>not</strong> diagnose or treat mental health conditions</li>
-                            <li>Does <strong>not</strong> replace therapy or professional medical care</li>
-                            <li>Is <strong>not</strong> spiritual direction (focuses on daily decisions rather than direct spiritual direction/theology)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p class="text-xs text-text-muted italic border-t border-surface-border/60 pt-4">
-                    Catholic life coaching works wonderfully alongside appropriate licensed medical care, therapy, and pastoral support when needed.
-                </p>
             </div>
         </div>
     </section>
 
     <!-- FREQUENTLY ASKED QUESTIONS -->
-    <section id="faq" class="py-20 bg-surface/30">
+    <section id="faq" class="py-16 sm:py-20 bg-surface/30">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Common Questions</h2>
                 <h3 class="font-heading text-3xl font-extrabold text-primary">Frequently Asked Questions</h3>
-                <p class="text-text-muted text-sm">Clear, straightforward answers to help you decide if coaching is right for you.</p>
             </div>
 
-            <div class="space-y-4">
-                <!-- Q1 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+            <div class="space-y-3">
+                <details class="group bg-background border border-surface-border rounded-xl p-4 sm:p-5 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
                         What is Catholic life coaching?
                         <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
@@ -642,19 +540,7 @@
                     </p>
                 </details>
 
-                <!-- Q2 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        What is mindset coaching?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        Mindset coaching focuses on uncovering negative, automatic thought loops—such as perfectionism or anxiety—and replacing them with constructive, truth-based perspectives that foster peace and intentional decision-making.
-                    </p>
-                </details>
-
-                <!-- Q3 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-background border border-surface-border rounded-xl p-4 sm:p-5 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
                         How is coaching different from therapy?
                         <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
@@ -663,113 +549,12 @@
                         Therapy focuses on healing psychological trauma, mental health conditions, and past emotional wounds. Life coaching focuses on present habits, future goals, practical decision-making, and proactive growth.
                     </p>
                 </details>
-
-                <!-- Q4 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        Is coaching the same as spiritual direction?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        No. Spiritual direction explores your interior prayer life and discernment of God's voice directly. Coaching centers on your daily life, routines, thought habits, and practical goals, while staying fully aligned with Church teachings.
-                    </p>
-                </details>
-
-                <!-- Q5 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        Why would I need a coach if God is the one who changes us?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        God frequently works through community, prudent mentors, and structured guidance. Coaching is a practical tool that helps you cooperate actively with His grace by clearing away mental noise and building virtuous habits.
-                    </p>
-                </details>
-
-                <!-- Q6 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        What can I discuss during coaching?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        You can bring topics like balancing motherhood and work, managing household stress, improving communication in marriage, overcoming feelings of unworthiness, or discerning a new chapter of life.
-                    </p>
-                </details>
-
-                <!-- Q7 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        How often will Sharon and I meet?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        Typically, clients meet weekly or bi-weekly depending on their selected package. This ensures enough time to implement action steps between sessions without feeling overwhelmed.
-                    </p>
-                </details>
-
-                <!-- Q8 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        Which coaching option is right for me?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        We recommend starting with a free discovery call. During that conversation, we’ll assess your goals and determine whether an individual session, 6-week, or 12-week program best fits your season.
-                    </p>
-                </details>
-
-                <!-- Q9 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        What happens during the free discovery call?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        It is a relaxed, 30-minute conversation. You share what you’re experiencing, ask any questions you have, and see if coaching feels like a helpful fit—with zero sales pressure.
-                    </p>
-                </details>
-
-                <!-- Q10 -->
-                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
-                        What if I decide coaching is not the right fit?
-                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
-                    </summary>
-                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
-                        That is completely fine! There is never any obligation to enroll after a discovery call. My priority is ensuring you find the exact support you need.
-                    </p>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- INTERNAL LINKS & SEO AUXILIARY SECTION -->
-    <section class="py-12 bg-background border-t border-surface-border text-xs text-text-muted">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-            <h4 class="font-heading font-bold text-primary text-sm uppercase">Recommended Internal Resources:</h4>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
-                    &bull; <strong>Catholic Marriage Coaching</strong>: Strengthening communication in marriage
-                </a>
-                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
-                    &bull; <strong>Catholic Coaching for Mothers</strong>: Balance & mindset for busy moms
-                </a>
-                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
-                    &bull; <strong>Catholic Discernment Coach</strong>: Navigating major life transitions
-                </a>
-                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
-                    &bull; <strong>About Sharon</strong>: Read Sharon's personal journey back to faith
-                </a>
-                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
-                    &bull; <strong>Get in Touch</strong>: Contact Sharon or request custom group workshops
-                </a>
             </div>
         </div>
     </section>
 
     <!-- FINAL CALL TO ACTION SECTION -->
-    <section id="contact-anchor" class="py-20 bg-gradient-to-b from-surface to-background relative">
+    <section id="contact-anchor" class="py-16 sm:py-20 bg-gradient-to-b from-surface to-background relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
             <div class="max-w-2xl mx-auto space-y-4">
                 <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-primary leading-tight">
@@ -780,35 +565,14 @@
                 </p>
             </div>
 
-            <div class="bg-background border border-surface-border p-8 rounded-3xl shadow-xl max-w-lg mx-auto space-y-6">
-                <div class="space-y-2">
-                    <p class="font-heading font-bold text-lg text-primary">Take Your First Step Today</p>
-                    <p class="text-xs text-text-muted">Select a time that works best for your schedule.</p>
-                </div>
-
+            <div class="bg-background border border-surface-border p-6 sm:p-8 rounded-3xl shadow-xl max-w-lg mx-auto space-y-6">
                 <a href="#" class="block w-full py-4 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary-hover shadow-lg transition-all text-center">
                     Schedule Your Free Discovery Call
                 </a>
 
-                <div class="pt-2">
-                    <p class="text-xs text-text-muted font-medium italic">
-                        Free, 30 minutes, and no pressure to enroll.
-                    </p>
-                </div>
-
-                <!-- Footer Social Media Prompt -->
-                <div class="pt-4 border-t border-surface-border flex items-center justify-center space-y-0 space-x-6">
-                    <span class="text-xs font-medium text-text-muted">Follow Sharon:</span>
-                    <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" aria-label="Sharon Coaching on Facebook" class="text-primary hover:text-secondary transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/sharonkcoaching/" target="_blank" rel="noopener" aria-label="Sharon Coaching on Instagram" class="text-primary hover:text-secondary transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                    <a href="https://open.spotify.com/show/4WZyi0x8gmDCcMgHMbsAKw" target="_blank" rel="noopener" aria-label="Sharon's Podcast on Spotify" class="text-primary hover:text-secondary transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.48.66.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-                    </a>
-                </div>
+                <p class="text-xs text-text-muted font-medium italic">
+                    Free, 30 minutes, and no pressure to enroll.
+                </p>
             </div>
         </div>
     </section>
@@ -827,7 +591,6 @@
                     </div>
                 </div>
 
-                <!-- Footer Social Media Links -->
                 <div class="flex items-center space-x-5">
                     <a href="https://www.facebook.com/profile.php?id=61558421352188" target="_blank" rel="noopener" aria-label="Facebook Page" class="hover:text-primary transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
