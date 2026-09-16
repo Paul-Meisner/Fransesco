@@ -1,586 +1,1026 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Digital | Enterprise Digital Transformation & Modern Tech Solutions</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#2563EB',
-                            hover: '#1D4ED8'
-                        },
-                        secondary: '#0284C7',
-                        accent: '#38BDF8',
-                        brandBg: '#0F172A',
-                        surface: '#1E293B',
-                        surfaceBorder: '#334155',
-                        brandText: '#F8FAFC',
-                        textMuted: '#94A3B8'
-                    },
-                    fontFamily: {
-                        heading: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        body: ['Inter', 'sans-serif']
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharon K Coaching | Catholic Life Coaching for Women: Faith, Purpose & Divine Peace</title>
+  <meta name="description" content="Empowering Catholic women to break free from overwhelm, embrace their divine identity, and live with clarity, purpose, and lasting peace.">
+
+  <!-- Tailwind CSS CDN (MUST BE FIRST) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Configuration (MUST BE AFTER CDN) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#2B4C7E',
+              hover: '#1E365D',
+              light: '#EBF1F9'
+            },
+            secondary: {
+              DEFAULT: '#C5A059',
+              hover: '#A88442',
+              light: '#F8F4EC'
+            },
+            accent: {
+              DEFAULT: '#D97706',
+              hover: '#B45309'
+            },
+            cream: '#FDFBF7',
+            surface: {
+              DEFAULT: '#FFFFFF',
+              border: '#EAE2D2'
+            },
+            body: '#1E293B',
+            muted: '#64748B'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -5px rgba(43, 76, 126, 0.05)',
+            'elevated': '0 20px 40px -15px rgba(197, 160, 89, 0.15)'
+          }
         }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0F172A;
-            color: #F8FAFC;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .glow-effect {
-            box-shadow: 0 0 50px -10px rgba(37, 99, 235, 0.25);
-        }
-        .glow-accent {
-            box-shadow: 0 0 35px -5px rgba(56, 189, 248, 0.3);
-        }
-        .bg-grid-pattern {
-            background-image: radial-gradient(rgba(51, 65, 85, 0.4) 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-    </style>
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-brandBg text-brandText antialiased selection:bg-accent selection:text-brandBg min-h-screen flex flex-col justify-between">
+<body class="bg-cream text-body font-sans antialiased selection:bg-secondary/20 selection:text-primary">
 
-    <!-- HEADER / NAVIGATION COMPONENT (DARK NAVBAR) -->
-    <header class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-surfaceBorder transition-all duration-200">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between" aria-label="Global Navigation">
-            <!-- Brand Logo -->
-            <div class="flex items-center space-x-3">
-                <a href="#hero" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-accent rounded-lg p-1">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold tracking-tight font-heading text-brandText group-hover:text-accent transition-colors">
-                        Apex<span class="text-accent font-normal">Digital</span>
-                    </span>
-                </a>
+  <!-- Top Announcement Bar -->
+  <div class="bg-primary text-white text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+    <svg class="w-4 h-4 text-secondary flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+    </svg>
+    <span>Complimentary 30-Minute Faith & Clarity Sessions Now Available for Spring</span>
+    <a href="#contact" class="underline text-secondary font-semibold hover:text-white transition-colors ml-1">Claim Your Spot</a>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur-md border-b border-surface-border transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#top" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-secondary font-serif text-xl font-bold shadow-sm group-hover:bg-primary-hover transition-colors border border-secondary/30">
+          SK
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold text-primary tracking-tight block leading-none">Sharon K Coaching</span>
+          <span class="text-[10px] tracking-widest text-muted uppercase font-semibold">Catholic Life Coaching</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-body">
+        <a href="#about" class="hover:text-primary transition-colors py-1">About Sharon</a>
+        <a href="#pillars" class="hover:text-primary transition-colors py-1">The Approach</a>
+        <a href="#services" class="hover:text-primary transition-colors py-1">Coaching Sessions</a>
+        <a href="#testimonials" class="hover:text-primary transition-colors py-1">Stories of Grace</a>
+        <a href="#faq" class="hover:text-primary transition-colors py-1">FAQ</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="tel:18005557427" class="text-xs font-semibold text-primary hover:text-primary-hover flex items-center gap-1.5 px-3 py-2 rounded-lg border border-primary/20 hover:bg-primary-light transition-all">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          (800) 555-SHARON
+        </a>
+        <a href="#contact" class="bg-primary hover:bg-primary-hover text-white text-xs font-semibold px-5 py-2.5 rounded-lg shadow-sm transition-all hover:shadow transform hover:-translate-y-0.5">
+          Book Free Discovery Call
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-primary focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-cream border-b border-surface-border px-4 pt-2 pb-6 space-y-3">
+      <a href="#about" class="block py-2 text-base font-medium text-body hover:text-primary">About Sharon</a>
+      <a href="#pillars" class="block py-2 text-base font-medium text-body hover:text-primary">The Approach</a>
+      <a href="#services" class="block py-2 text-base font-medium text-body hover:text-primary">Coaching Sessions</a>
+      <a href="#testimonials" class="block py-2 text-base font-medium text-body hover:text-primary">Stories of Grace</a>
+      <a href="#faq" class="block py-2 text-base font-medium text-body hover:text-primary">FAQ</a>
+      <div class="pt-4 border-t border-surface-border flex flex-col gap-3">
+        <a href="tel:18005557427" class="text-center text-sm font-semibold text-primary py-2.5 rounded-lg border border-primary/20 bg-white">
+          Call (800) 555-7427
+        </a>
+        <a href="#contact" class="text-center text-sm font-semibold text-white py-2.5 rounded-lg bg-primary shadow">
+          Book Free Discovery Call
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-surface-border bg-gradient-to-b from-cream via-cream to-secondary-light/20">
+      
+      <!-- Subtle Decorative Background Cross Motif -->
+      <div class="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
+        <svg class="w-[600px] h-[600px] text-primary" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
+        </svg>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-light border border-secondary/30 text-secondary-dark text-xs sm:text-sm font-semibold tracking-wide">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L15 9L22 9L16.5 13.5L18.5 21L12 16.5L5.5 21L7.5 13.5L2 9L9 9L12 2Z"/>
+              </svg>
+              <span>Catholic Life Coaching for Women</span>
             </div>
 
-            <!-- Desktop Links -->
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-textMuted">
-                <a href="#services" class="hover:text-accent transition-colors hover:scale-105 transform">Services</a>
-                <a href="#solutions" class="hover:text-accent transition-colors hover:scale-105 transform">Solutions</a>
-                <a href="#case-studies" class="hover:text-accent transition-colors hover:scale-105 transform">Case Studies</a>
-                <a href="#about" class="hover:text-accent transition-colors hover:scale-105 transform">About Apex</a>
-                <a href="#contact" class="hover:text-accent transition-colors hover:scale-105 transform">Contact</a>
-            </div>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-[1.15] tracking-tight">
+              Reclaim Your Inner Peace, Align Your Purpose, and Walk Confidently in God’s Grace.
+            </h1>
 
-            <!-- CTA Actions & Direct Call Path -->
-            <div class="hidden sm:flex items-center space-x-4">
-                <a href="tel:+18005550199" class="flex items-center gap-2 text-xs font-semibold text-textMuted hover:text-brandText transition-colors py-2 px-3 rounded-lg hover:bg-surfaceBorder/40">
-                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span>+1 (800) 555-0199</span>
-                </a>
-                <a href="#audit-form" class="bg-primary hover:bg-primary-hover text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all shadow-md hover:shadow-primary/50 flex items-center gap-2">
-                    <span>Get Started</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                </a>
-            </div>
+            <p class="text-lg sm:text-xl text-muted font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Grounded in Catholic spirituality and evidence-based life coaching, Sharon helps women release anxiety, overcome self-doubt, and discern God's personal call with joyful clarity.
+            </p>
 
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-textMuted hover:text-brandText hover:bg-surfaceBorder focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#contact" class="w-full sm:w-auto bg-primary hover:bg-primary-hover text-white text-base font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all text-center flex items-center justify-center gap-2 group">
+                <span>Begin Your Journey</span>
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
+              </a>
+              <a href="#pillars" class="w-full sm:w-auto bg-white hover:bg-secondary-light text-primary font-semibold text-base px-7 py-4 rounded-xl border border-surface-border shadow-sm transition-all text-center">
+                Explore the Approach
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="pt-8 border-t border-surface-border/60 grid grid-cols-3 gap-4 text-center lg:text-left max-w-lg mx-auto lg:mx-0">
+              <div>
+                <span class="block font-serif text-2xl lg:text-3xl font-bold text-primary">100%</span>
+                <span class="text-xs text-muted font-medium">Faith-Integrated</span>
+              </div>
+              <div class="border-x border-surface-border px-2">
+                <span class="block font-serif text-2xl lg:text-3xl font-bold text-primary">1:1 & Group</span>
+                <span class="text-xs text-muted font-medium">Personal Mentorship</span>
+              </div>
+              <div>
+                <span class="block font-serif text-2xl lg:text-3xl font-bold text-primary">Divine Peace</span>
+                <span class="text-xs text-muted font-medium">Mindful Vocation</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Graphic Card / Visual Feature -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Soft Decorative Frame Accent -->
+              <div class="absolute -inset-2 bg-gradient-to-tr from-secondary/30 to-primary/20 rounded-3xl blur-xl opacity-70"></div>
+              
+              <div class="relative bg-surface rounded-2xl p-6 sm:p-8 border border-surface-border shadow-elevated space-y-6">
+                
+                <div class="flex items-center justify-between border-b border-surface-border pb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-secondary-light flex items-center justify-center text-secondary font-serif font-bold text-xl">
+                      SK
+                    </div>
+                    <div>
+                      <h3 class="font-serif font-bold text-primary text-lg leading-snug">Sharon K.</h3>
+                      <p class="text-xs text-muted">Certified Catholic Life Coach</p>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span>
+                    Accepting Clients
+                  </span>
+                </div>
+
+                <!-- Quote Highlight -->
+                <blockquote class="italic text-body/90 font-serif text-lg leading-relaxed border-l-2 border-secondary pl-4 py-1">
+                  "You were not created for fear or relentless striving. You were created for holy confidence, divine peace, and purposeful joy."
+                </blockquote>
+
+                <!-- Key Benefits List -->
+                <div class="space-y-3 pt-2">
+                  <div class="flex items-start gap-3 text-sm text-body">
+                    <div class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <span>Clear spiritual & practical life roadmaps</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-sm text-body">
+                    <div class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <span>Root out anxiety, guilt, and perfectionism</span>
+                  </div>
+                  <div class="flex items-start gap-3 text-sm text-body">
+                    <div class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                      ✓
+                    </div>
+                    <span>Align daily habits with Church-guided wisdom</span>
+                  </div>
+                </div>
+
+                <!-- Callout Banner -->
+                <div class="bg-cream rounded-xl p-4 border border-surface-border text-center">
+                  <p class="text-xs text-muted mb-2 font-medium">Ready to take your first gentle step?</p>
+                  <a href="#contact" class="block w-full bg-secondary hover:bg-secondary-hover text-white text-xs font-semibold py-2.5 rounded-lg transition-colors">
+                    Select Your Session Desire Below
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripture & Mission Banner -->
+    <section class="bg-primary text-white py-12 relative overflow-hidden">
+      <div class="max-w-4xl mx-auto px-4 text-center space-y-3 relative z-10">
+        <p class="text-secondary font-serif italic text-xl sm:text-2xl">
+          "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        </p>
+        <p class="text-xs sm:text-sm font-semibold tracking-widest uppercase text-white/80">— JOHN 14:27</p>
+      </div>
+    </section>
+
+    <!-- About Sharon K Section -->
+    <section id="about" class="py-20 lg:py-28 bg-cream border-b border-surface-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Graphic / Representation Box -->
+          <div class="lg:col-span-5">
+            <div class="relative">
+              <div class="absolute inset-0 bg-secondary/20 rounded-3xl transform rotate-3"></div>
+              <div class="relative bg-surface p-8 rounded-3xl border border-surface-border shadow-soft space-y-6">
+                
+                <div class="w-20 h-20 rounded-full bg-primary text-secondary flex items-center justify-center font-serif font-bold text-3xl mx-auto shadow-md">
+                  SK
+                </div>
+
+                <div class="text-center space-y-2">
+                  <h3 class="font-serif text-2xl font-bold text-primary">Sharon K.</h3>
+                  <p class="text-sm font-medium text-secondary-dark">Catholic Life & Vocation Coach</p>
+                  <p class="text-xs text-muted">Certified Life Coach | Spiritual Companion | Speaker</p>
+                </div>
+
+                <hr class="border-surface-border">
+
+                <div class="space-y-4 text-xs text-body leading-relaxed">
+                  <div class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    <span>10+ Years Supporting Women in Catholic Ministry</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    <span>Certified Mindset & Purpose Facilitator</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    <span>Fidelity to the Magisterium & Catholic Teaching</span>
+                  </div>
+                </div>
+
+                <div class="pt-2 text-center">
+                  <a href="#contact" class="inline-block text-xs font-bold text-primary hover:text-primary-hover underline">
+                    Read Full Story & Bio →
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Text -->
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-secondary-dark">Welcome, Sister in Faith</span>
+            
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight">
+              You Don’t Have to Carry the Weight of the World Alone.
+            </h2>
+
+            <p class="text-base sm:text-lg text-body/90 leading-relaxed">
+              Hello, I’m Sharon. As a Catholic life coach, my mission is to help women step out of chronic burnout, decision fatigue, and spiritual dryness, into the abundant life Christ promised us.
+            </p>
+
+            <p class="text-base text-muted leading-relaxed">
+              Whether you are navigating a major life transition, discerning your true vocation, trying to balance motherhood and career, or simply longing for deeper prayer and inner serenity—coaching provides the structured accountability, warm encouragement, and faithful guidance you need.
+            </p>
+
+            <!-- 3 Core Philosophy Points -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-surface border border-surface-border space-y-1">
+                <h4 class="font-serif font-bold text-primary text-base">Faith First</h4>
+                <p class="text-xs text-muted">Every session is anchored in Catholic prayer, truth, and grace.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-surface border border-surface-border space-y-1">
+                <h4 class="font-serif font-bold text-primary text-base">Practical Growth</h4>
+                <p class="text-xs text-muted">Actionable steps, mindset tools, and personalized goals.</p>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="#contact" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white text-sm font-semibold px-6 py-3.5 rounded-lg transition-all shadow-sm">
+                <span>Book a Conversation with Sharon</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- The 4 Pillars of Catholic Coaching -->
+    <section id="pillars" class="py-20 bg-surface border-b border-surface-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary-dark">The Method</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">
+            How Catholic Life Coaching Transforms Your Life
+          </h2>
+          <p class="text-base sm:text-lg text-muted">
+            Combining timeless spiritual wisdom with modern, proven life coaching frameworks to help you thrive in mind, heart, and soul.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="bg-cream rounded-2xl p-6 border border-surface-border hover:shadow-soft transition-all space-y-4 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-serif text-xl font-bold">
+                01
+              </div>
+              <h3 class="font-serif text-xl font-bold text-primary">Faith Rooted Mindset</h3>
+              <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                Replace persistent self-doubt, perfectionism, and anxiety with God's truth about your sacred identity and worth.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-secondary-dark tracking-wide uppercase pt-2">Foundation</span>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="bg-cream rounded-2xl p-6 border border-surface-border hover:shadow-soft transition-all space-y-4 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center font-serif text-xl font-bold">
+                02
+              </div>
+              <h3 class="font-serif text-xl font-bold text-primary">Purpose & Discernment</h3>
+              <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                Gain clarity on God's call for your current season—whether in family, career, relationships, or personal growth.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-secondary-dark tracking-wide uppercase pt-2">Clarity</span>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="bg-cream rounded-2xl p-6 border border-surface-border hover:shadow-soft transition-all space-y-4 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-serif text-xl font-bold">
+                03
+              </div>
+              <h3 class="font-serif text-xl font-bold text-primary">Divine Peace & Rest</h3>
+              <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                Develop sustainable daily prayer habits and boundary structures that honor your capacity and restore your soul.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-secondary-dark tracking-wide uppercase pt-2">Serenity</span>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="bg-cream rounded-2xl p-6 border border-surface-border hover:shadow-soft transition-all space-y-4 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center font-serif text-xl font-bold">
+                04
+              </div>
+              <h3 class="font-serif text-xl font-bold text-primary">Graceful Action</h3>
+              <p class="text-xs sm:text-sm text-muted leading-relaxed">
+                Move from static reflection to intentional, courageous steps forward with loving accountability and support.
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-secondary-dark tracking-wide uppercase pt-2">Execution</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services & Session Desire Options Section -->
+    <section id="services" class="py-20 lg:py-28 bg-cream border-b border-surface-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary-dark">Coaching Packages</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">
+            Choose Your Pathway to Growth & Peace
+          </h2>
+          <p class="text-base sm:text-lg text-muted">
+            Every woman's walk of faith is unique. Select the coaching path or session desire that best fits your current life season.
+          </p>
+        </div>
+
+        <!-- 3 Offer Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Package 1 -->
+          <div class="bg-surface rounded-3xl p-8 border border-surface-border shadow-soft flex flex-col justify-between relative hover:border-secondary transition-all">
+            <div class="space-y-6">
+              <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                Single Focus Session
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl font-bold text-primary">30-Min Discovery Session</h3>
+                <p class="text-xs text-muted mt-1">Complimentary Clarity Call</p>
+              </div>
+              <p class="text-sm text-body/90 leading-relaxed">
+                A gentle, no-pressure 1:1 conversation to discuss where you feel stuck, map out immediate relief, and see if coaching is the right fit.
+              </p>
+              <ul class="space-y-3 pt-2 text-xs text-body">
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> 30-minute private 1:1 Zoom or Phone
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Assessment of current challenges
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Personalized next-step recommendation
+                </li>
+              </ul>
+            </div>
+            <div class="pt-8 mt-6 border-t border-surface-border space-y-3">
+              <div class="text-2xl font-serif font-bold text-primary">Free <span class="text-xs text-muted font-normal">/ introductory</span></div>
+              <button onclick="selectSessionOption('Discovery Session')" class="w-full bg-cream hover:bg-secondary-light text-primary border border-surface-border font-semibold text-xs py-3 rounded-xl transition-colors">
+                Select This Session Desire
+              </button>
+            </div>
+          </div>
+
+          <!-- Package 2 (Featured) -->
+          <div class="bg-surface rounded-3xl p-8 border-2 border-secondary shadow-elevated flex flex-col justify-between relative transform lg:-translate-y-3">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secondary text-white text-[11px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow">
+              Most Popular Path
+            </div>
+            <div class="space-y-6">
+              <div class="inline-block px-3 py-1 rounded-full bg-secondary-light text-secondary-dark text-xs font-bold uppercase tracking-wider">
+                6-Week Transformation
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl font-bold text-primary">The Grace & Purpose Intensive</h3>
+                <p class="text-xs text-muted mt-1">Focused Breakthrough Mentorship</p>
+              </div>
+              <p class="text-sm text-body/90 leading-relaxed">
+                Designed for women facing an immediate transition, decision, or period of heavy stress who need focused spiritual clarity and strategic momentum.
+              </p>
+              <ul class="space-y-3 pt-2 text-xs text-body">
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> 6 Weekly 60-Minute 1:1 Sessions
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Faith-Integrated Worksheets & Guides
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Voxer/Email Prayer & Support Access
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Personal Action Plan Blueprint
+                </li>
+              </ul>
+            </div>
+            <div class="pt-8 mt-6 border-t border-surface-border space-y-3">
+              <div class="text-2xl font-serif font-bold text-primary">Custom Plans <span class="text-xs text-muted font-normal">/ 6 Weeks</span></div>
+              <button onclick="selectSessionOption('Grace & Purpose Intensive (6 Weeks)')" class="w-full bg-primary hover:bg-primary-hover text-white font-semibold text-xs py-3.5 rounded-xl shadow transition-colors">
+                Select This Session Desire
+              </button>
+            </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="bg-surface rounded-3xl p-8 border border-surface-border shadow-soft flex flex-col justify-between relative hover:border-secondary transition-all">
+            <div class="space-y-6">
+              <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                12-Week Deep Mentorship
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl font-bold text-primary">Divine Peace & Vocation Mastery</h3>
+                <p class="text-xs text-muted mt-1">Complete Life Renewal</p>
+              </div>
+              <p class="text-sm text-body/90 leading-relaxed">
+                A comprehensive 3-month coaching experience to root out deep patterns of anxiety, align your daily routine with your Catholic vocation, and step into holy confidence.
+              </p>
+              <ul class="space-y-3 pt-2 text-xs text-body">
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> 12 Bi-weekly or Weekly 60-Min Sessions
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Mindset Renewal & Habit Architecture
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Priority Between-Session Mentorship
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-secondary font-bold">✓</span> Post-Coaching Maintenance Plan
+                </li>
+              </ul>
+            </div>
+            <div class="pt-8 mt-6 border-t border-surface-border space-y-3">
+              <div class="text-2xl font-serif font-bold text-primary">Full Transformation <span class="text-xs text-muted font-normal">/ 12 Weeks</span></div>
+              <button onclick="selectSessionOption('Divine Peace & Vocation Mastery (12 Weeks)')" class="w-full bg-cream hover:bg-secondary-light text-primary border border-surface-border font-semibold text-xs py-3 rounded-xl transition-colors">
+                Select This Session Desire
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Session Desire Interactive Quick-Select Buttons -->
+        <div class="bg-surface rounded-2xl p-6 border border-surface-border text-center space-y-4">
+          <h3 class="font-serif font-bold text-xl text-primary">Looking for a Specific Topic or Session Focus?</h3>
+          <p class="text-xs text-muted max-w-xl mx-auto">Click any primary coaching focus area below to pre-fill your request form instantly:</p>
+          <div class="flex flex-wrap justify-center gap-2.5">
+            <button onclick="selectSessionOption('Anxiety & Divine Peace Support')" class="text-xs bg-cream hover:bg-secondary-light text-body border border-surface-border px-3.5 py-2 rounded-lg transition-colors font-medium">
+              🕊️ Anxiety & Divine Peace
             </button>
-        </nav>
-
-        <!-- Mobile Navigation Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-surfaceBorder px-4 pt-2 pb-6 space-y-3">
-            <a href="#services" class="block py-2 text-base font-medium text-brandText hover:text-accent">Services</a>
-            <a href="#solutions" class="block py-2 text-base font-medium text-brandText hover:text-accent">Solutions</a>
-            <a href="#case-studies" class="block py-2 text-base font-medium text-brandText hover:text-accent">Case Studies</a>
-            <a href="#about" class="block py-2 text-base font-medium text-brandText hover:text-accent">About Apex</a>
-            <a href="#contact" class="block py-2 text-base font-medium text-brandText hover:text-accent">Contact</a>
-            <div class="pt-4 border-t border-surfaceBorder flex flex-col gap-3">
-                <a href="tel:+18005550199" class="flex items-center justify-center gap-2 text-sm font-medium text-textMuted py-2 bg-brandBg rounded-lg border border-surfaceBorder">
-                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span>+1 (800) 555-0199</span>
-                </a>
-                <a href="#audit-form" class="text-center bg-primary hover:bg-primary-hover text-white text-sm font-semibold py-3 rounded-lg shadow">
-                    Get Free Digital Audit
-                </a>
-            </div>
+            <button onclick="selectSessionOption('Vocation & Career Discernment')" class="text-xs bg-cream hover:bg-secondary-light text-body border border-surface-border px-3.5 py-2 rounded-lg transition-colors font-medium">
+              💡 Vocation & Discernment
+            </button>
+            <button onclick="selectSessionOption('Motherhood & Family Balance')" class="text-xs bg-cream hover:bg-secondary-light text-body border border-surface-border px-3.5 py-2 rounded-lg transition-colors font-medium">
+              🏡 Motherhood & Balance
+            </button>
+            <button onclick="selectSessionOption('Singlehood & Purpose')" class="text-xs bg-cream hover:bg-secondary-light text-body border border-surface-border px-3.5 py-2 rounded-lg transition-colors font-medium">
+              ✝️ Singlehood & Purpose
+            </button>
+            <button onclick="selectSessionOption('Prayer & Spiritual Habit Building')" class="text-xs bg-cream hover:bg-secondary-light text-body border border-surface-border px-3.5 py-2 rounded-lg transition-colors font-medium">
+              📖 Prayer Habit Renewal
+            </button>
+          </div>
         </div>
-    </header>
 
-    <main id="hero" class="flex-grow">
-        <!-- HERO SECTION -->
-        <section class="relative pt-16 pb-24 lg:pt-28 lg:pb-36 overflow-hidden bg-grid-pattern">
-            <!-- Subtle Radial Gradient Background Blur -->
-            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none"></div>
-            <div class="absolute top-1/3 right-10 w-[350px] h-[350px] bg-accent/15 rounded-full blur-[100px] pointer-events-none"></div>
+      </div>
+    </section>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    
-                    <!-- Left Hero Content -->
-                    <div class="lg:col-span-7 space-y-8 text-left">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface border border-surfaceBorder text-xs font-semibold text-accent shadow-inner">
-                            <span class="flex h-2 w-2 rounded-full bg-accent animate-ping"></span>
-                            Next-Gen Enterprise Platform
-                        </div>
-
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brandText leading-none font-heading">
-                            Accelerate Digital Growth With <span class="bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent">Apex Precision</span>
-                        </h1>
-
-                        <p class="text-lg sm:text-xl text-textMuted max-w-2xl font-light leading-relaxed">
-                            Apex Digital powers modern enterprises through scalable cloud architectures, intelligent automated workflows, and data-driven customer acquisition platforms.
-                        </p>
-
-                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                            <a href="#audit-form" class="bg-primary hover:bg-primary-hover text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-primary/40 transition-all text-center flex items-center justify-center gap-3">
-                                <span>Start Your Free Strategy Session</span>
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </a>
-                            <a href="tel:+18005550199" class="bg-surface hover:bg-surfaceBorder text-brandText border border-surfaceBorder font-semibold px-6 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
-                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span>Call Executive Team</span>
-                            </a>
-                        </div>
-
-                        <!-- Metrics / Trust Badges -->
-                        <div class="pt-8 border-t border-surfaceBorder/60 grid grid-cols-3 gap-6 text-left">
-                            <div>
-                                <p class="text-3xl font-extrabold text-brandText font-heading">99.99%</p>
-                                <p class="text-xs text-textMuted uppercase tracking-wider mt-1">Uptime SLA</p>
-                            </div>
-                            <div>
-                                <p class="text-3xl font-extrabold text-accent font-heading">3.8x</p>
-                                <p class="text-xs text-textMuted uppercase tracking-wider mt-1">Avg ROI Growth</p>
-                            </div>
-                            <div>
-                                <p class="text-3xl font-extrabold text-brandText font-heading">250+</p>
-                                <p class="text-xs text-textMuted uppercase tracking-wider mt-1">Global Clients</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Hero Dashboard Mockup Container -->
-                    <div class="lg:col-span-5">
-                        <div class="relative bg-surface border border-surfaceBorder rounded-2xl p-6 glow-effect">
-                            <!-- Card Header -->
-                            <div class="flex items-center justify-between pb-4 border-b border-surfaceBorder">
-                                <div class="flex items-center space-x-2">
-                                    <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
-                                    <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
-                                    <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
-                                </div>
-                                <span class="text-xs font-mono text-textMuted">apex-analytics-v4.0</span>
-                            </div>
-
-                            <!-- Live Dashboard Graphics Visual -->
-                            <div class="pt-6 space-y-6">
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        <p class="text-xs text-textMuted uppercase">Quarterly Revenue Impact</p>
-                                        <p class="text-2xl font-bold text-brandText">$4,289,100</p>
-                                    </div>
-                                    <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                                        +34.2% YoY
-                                    </span>
-                                </div>
-
-                                <!-- SVG Visual Graph -->
-                                <div class="h-40 w-full bg-brandBg/60 rounded-xl p-3 border border-surfaceBorder flex items-end justify-between gap-2">
-                                    <div class="w-full bg-primary/20 rounded-t h-1/3 hover:bg-primary transition-all"></div>
-                                    <div class="w-full bg-primary/30 rounded-t h-1/2 hover:bg-primary transition-all"></div>
-                                    <div class="w-full bg-primary/50 rounded-t h-2/3 hover:bg-primary transition-all"></div>
-                                    <div class="w-full bg-accent/60 rounded-t h-3/4 hover:bg-accent transition-all"></div>
-                                    <div class="w-full bg-accent rounded-t h-full glow-accent"></div>
-                                </div>
-
-                                <!-- Active Micro Cards -->
-                                <div class="grid grid-cols-2 gap-3 pt-2">
-                                    <div class="p-3 bg-brandBg/80 rounded-lg border border-surfaceBorder">
-                                        <p class="text-xs text-textMuted">Conversion Rate</p>
-                                        <p class="text-lg font-bold text-accent">14.8%</p>
-                                    </div>
-                                    <div class="p-3 bg-brandBg/80 rounded-lg border border-surfaceBorder">
-                                        <p class="text-xs text-textMuted">System Speed</p>
-                                        <p class="text-lg font-bold text-emerald-400">42ms</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES SECTION -->
-        <section id="services" class="py-20 bg-surface/40 border-y border-surfaceBorder">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-bold text-accent uppercase tracking-widest mb-3">Enterprise Core Capabilities</h2>
-                    <p class="text-3xl sm:text-4xl font-extrabold text-brandText font-heading">
-                        Tailored Digital Engineering & Growth Systems
-                    </p>
-                    <p class="text-textMuted mt-4 text-base">
-                        From high-speed web application development to automated marketing infrastructure, we build the engine that scales your business.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service 1 -->
-                    <div class="bg-surface p-8 rounded-2xl border border-surfaceBorder hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center mb-6 border border-accent/20">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-brandText font-heading mb-3">Custom Application Engineering</h3>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">
-                            Scalable microservices, Cloud-native architectures, and web platforms built with extreme performance and precision security.
-                        </p>
-                        <a href="#audit-form" class="inline-flex items-center text-xs font-semibold text-accent hover:text-brandText transition-colors gap-1">
-                            <span>Explore Tech Stack</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="bg-surface p-8 rounded-2xl border border-surfaceBorder hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center mb-6 border border-accent/20">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-brandText font-heading mb-3">Performance Marketing Engines</h3>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">
-                            Multi-channel automated conversion funnels and programmatic customer acquisition designed for measurable ROI.
-                        </p>
-                        <a href="#audit-form" class="inline-flex items-center text-xs font-semibold text-accent hover:text-brandText transition-colors gap-1">
-                            <span>View Marketing Models</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="bg-surface p-8 rounded-2xl border border-surfaceBorder hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 text-accent flex items-center justify-center mb-6 border border-accent/20">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1.5 3 3.5 3h9c2 0 3.5-1 3.5-3V7c0-2-1.5-3-3.5-3h-9C5.5 4 4 5 4 7z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-brandText font-heading mb-3">Cloud Infrastructure & DevOps</h3>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">
-                            Zero-downtime deployment pipelines, Kubernetes cluster orchestration, and automated vulnerability monitoring.
-                        </p>
-                        <a href="#audit-form" class="inline-flex items-center text-xs font-semibold text-accent hover:text-brandText transition-colors gap-1">
-                            <span>Audit Cloud Architecture</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOLUTIONS & TECH STACK -->
-        <section id="solutions" class="py-20 bg-brandBg">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-xs font-bold text-accent uppercase tracking-widest mb-3">Architected for Speed</h2>
-                        <h3 class="text-3xl sm:text-4xl font-extrabold text-brandText font-heading leading-tight mb-6">
-                            Modern Tech Solutions Built for Modern Scale
-                        </h3>
-                        <p class="text-textMuted leading-relaxed mb-8">
-                            We don't just build websites; we construct modern enterprise infrastructure. Our modern stack leverages cutting-edge technology to give your business an unfair competitive advantage.
-                        </p>
-
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-4">
-                                <div class="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center text-accent shrink-0 mt-1">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                </div>
-                                <div>
-                                    <h4 class="text-base font-bold text-brandText">Sub-Second Load Times</h4>
-                                    <p class="text-sm text-textMuted">Optimized CDN edge delivery ensures rapid response anywhere on Earth.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center text-accent shrink-0 mt-1">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                </div>
-                                <div>
-                                    <h4 class="text-base font-bold text-brandText">AI-Powered Conversion Optimization</h4>
-                                    <p class="text-sm text-textMuted">Dynamic user journey personalization based on real-time behavior analytics.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center text-accent shrink-0 mt-1">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                </div>
-                                <div>
-                                    <h4 class="text-base font-bold text-brandText">Enterprise Grade Security</h4>
-                                    <p class="text-sm text-textMuted">SOC2 compliant workflows, encrypted transmission, and proactive threat detection.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tech Grid Visual -->
-                    <div class="bg-surface p-8 rounded-2xl border border-surfaceBorder grid grid-cols-2 gap-4">
-                        <div class="p-5 bg-brandBg rounded-xl border border-surfaceBorder text-center">
-                            <span class="text-2xl font-bold text-accent font-heading block">GraphQL</span>
-                            <span class="text-xs text-textMuted mt-1 block">Data Query Layer</span>
-                        </div>
-                        <div class="p-5 bg-brandBg rounded-xl border border-surfaceBorder text-center">
-                            <span class="text-2xl font-bold text-primary font-heading block">AWS / Cloud</span>
-                            <span class="text-xs text-textMuted mt-1 block">Global Edge Infrastructure</span>
-                        </div>
-                        <div class="p-5 bg-brandBg rounded-xl border border-surfaceBorder text-center">
-                            <span class="text-2xl font-bold text-brandText font-heading block">Tailwind CSS</span>
-                            <span class="text-xs text-textMuted mt-1 block">High-Speed UI Styling</span>
-                        </div>
-                        <div class="p-5 bg-brandBg rounded-xl border border-surfaceBorder text-center">
-                            <span class="text-2xl font-bold text-emerald-400 font-heading block">Node / React</span>
-                            <span class="text-xs text-textMuted mt-1 block">Full-Stack Framework</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CASE STUDIES SECTION -->
-        <section id="case-studies" class="py-20 bg-surface/30 border-t border-surfaceBorder">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                    <div>
-                        <h2 class="text-xs font-bold text-accent uppercase tracking-widest mb-3">Proven Impact</h2>
-                        <h3 class="text-3xl font-extrabold text-brandText font-heading">Featured Client Results</h3>
-                    </div>
-                    <a href="tel:+18005550199" class="text-xs font-bold text-accent hover:text-brandText transition-colors flex items-center gap-1 mt-4 md:mt-0">
-                        <span>Speak with an Architect</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-surface rounded-2xl border border-surfaceBorder p-8 relative overflow-hidden group hover:border-accent/40 transition-all">
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-primary/20 text-accent">FinTech Platform</span>
-                            <span class="text-xs font-mono text-textMuted">Case Study #01</span>
-                        </div>
-                        <h4 class="text-2xl font-bold text-brandText font-heading mb-3">Global Banking Platform Scaling</h4>
-                        <p class="text-textMuted text-sm mb-6">
-                            Rebuilt core processing frontend and database infrastructure, resulting in 400% higher transaction volume capability without latency degradation.
-                        </p>
-                        <div class="pt-4 border-t border-surfaceBorder flex justify-between items-center">
-                            <div>
-                                <p class="text-2xl font-extrabold text-accent font-heading">+400%</p>
-                                <p class="text-xs text-textMuted">Transaction Speed</p>
-                            </div>
-                            <div>
-                                <p class="text-2xl font-extrabold text-brandText font-heading">$12M</p>
-                                <p class="text-xs text-textMuted">Saved Annual Overhead</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface rounded-2xl border border-surfaceBorder p-8 relative overflow-hidden group hover:border-accent/40 transition-all">
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-secondary/20 text-accent">E-Commerce SaaS</span>
-                            <span class="text-xs font-mono text-textMuted">Case Study #02</span>
-                        </div>
-                        <h4 class="text-2xl font-bold text-brandText font-heading mb-3">AI Conversion Engine Integration</h4>
-                        <p class="text-textMuted text-sm mb-6">
-                            Integrated real-time buyer analytics and dynamic landing page rendering that drove lead conversion from 2.1% to 8.4% within 90 days.
-                        </p>
-                        <div class="pt-4 border-t border-surfaceBorder flex justify-between items-center">
-                            <div>
-                                <p class="text-2xl font-extrabold text-accent font-heading">300%</p>
-                                <p class="text-xs text-textMuted">Conversion Increase</p>
-                            </div>
-                            <div>
-                                <p class="text-2xl font-extrabold text-brandText font-heading">90 Days</p>
-                                <p class="text-xs text-textMuted">Implementation Time</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FUNCTIONAL AUDIT / CONTACT FORM (CONVERSION PATH) -->
-        <section id="audit-form" class="py-24 bg-brandBg relative">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-surface border border-surfaceBorder rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
-                    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
-
-                    <div class="text-center max-w-2xl mx-auto mb-10">
-                        <span class="text-xs font-bold text-accent uppercase tracking-widest">Interactive Audit</span>
-                        <h2 class="text-3xl font-extrabold text-brandText font-heading mt-2">Request Your Free Digital Growth Audit</h2>
-                        <p class="text-textMuted text-sm mt-3">
-                            Fill out the details below. Our executive engineering team will analyze your platform and present a customized 12-month scaling strategy.
-                        </p>
-                    </div>
-
-                    <form id="leadForm" action="javascript:void(0);" onsubmit="alert('Thank you! An Apex Digital Architect will reach out within 2 business hours.');" class="space-y-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="fullName" class="block text-xs font-semibold text-brandText uppercase tracking-wider mb-2">Full Name *</label>
-                                <input type="text" id="fullName" required placeholder="John Doe" class="w-full bg-brandBg border border-surfaceBorder rounded-xl px-4 py-3 text-brandText placeholder-textMuted focus:outline-none focus:border-accent transition-colors text-sm">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-xs font-semibold text-brandText uppercase tracking-wider mb-2">Work Email *</label>
-                                <input type="email" id="email" required placeholder="john@company.com" class="w-full bg-brandBg border border-surfaceBorder rounded-xl px-4 py-3 text-brandText placeholder-textMuted focus:outline-none focus:border-accent transition-colors text-sm">
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label for="phone" class="block text-xs font-semibold text-brandText uppercase tracking-wider mb-2">Phone Number *</label>
-                                <input type="tel" id="phone" required placeholder="+1 (555) 000-0000" class="w-full bg-brandBg border border-surfaceBorder rounded-xl px-4 py-3 text-brandText placeholder-textMuted focus:outline-none focus:border-accent transition-colors text-sm">
-                            </div>
-                            <div>
-                                <label for="serviceType" class="block text-xs font-semibold text-brandText uppercase tracking-wider mb-2">Primary Need *</label>
-                                <select id="serviceType" class="w-full bg-brandBg border border-surfaceBorder rounded-xl px-4 py-3 text-brandText focus:outline-none focus:border-accent transition-colors text-sm">
-                                    <option value="app">Custom Web Application</option>
-                                    <option value="cloud">Cloud & Infrastructure Scaling</option>
-                                    <option value="marketing">Digital Marketing System</option>
-                                    <option value="full">Full Digital Transformation</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="message" class="block text-xs font-semibold text-brandText uppercase tracking-wider mb-2">Project Brief / Goals</label>
-                            <textarea id="message" rows="4" placeholder="Tell us about your target goals, timeline, and current infrastructure challenges..." class="w-full bg-brandBg border border-surfaceBorder rounded-xl px-4 py-3 text-brandText placeholder-textMuted focus:outline-none focus:border-accent transition-colors text-sm"></textarea>
-                        </div>
-
-                        <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                            <button type="submit" class="w-full sm:w-auto bg-primary hover:bg-primary-hover text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-sm flex items-center justify-center gap-2">
-                                <span>Submit Audit Request</span>
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                            </button>
-                            <div class="flex items-center gap-2 text-xs text-textMuted">
-                                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                                <span>Strict Confidentiality Guaranteed</span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer id="about" class="bg-surface border-t border-surfaceBorder py-12 text-sm text-textMuted">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-surfaceBorder">
-                <div class="space-y-4">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-primary to-accent flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <span class="text-lg font-bold font-heading text-brandText">Apex Digital</span>
-                    </div>
-                    <p class="text-xs text-textMuted leading-relaxed">
-                        High-tech corporate digital transformation agency delivering end-to-end enterprise software, cloud scaling, and digital growth systems.
-                    </p>
-                </div>
-
-                <div>
-                    <p class="text-xs font-bold text-brandText uppercase tracking-wider mb-4">Solutions</p>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#services" class="hover:text-accent transition-colors">Custom Web Apps</a></li>
-                        <li><a href="#services" class="hover:text-accent transition-colors">Cloud Optimization</a></li>
-                        <li><a href="#services" class="hover:text-accent transition-colors">DevOps & Security</a></li>
-                        <li><a href="#services" class="hover:text-accent transition-colors">Automated Growth</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="text-xs font-bold text-brandText uppercase tracking-wider mb-4">Company</p>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#hero" class="hover:text-accent transition-colors">About Apex</a></li>
-                        <li><a href="#case-studies" class="hover:text-accent transition-colors">Case Studies</a></li>
-                        <li><a href="#audit-form" class="hover:text-accent transition-colors">Get Free Audit</a></li>
-                        <li><a href="#contact" class="hover:text-accent transition-colors">Contact Team</a></li>
-                    </ul>
-                </div>
-
-                <div id="contact">
-                    <p class="text-xs font-bold text-brandText uppercase tracking-wider mb-4">Direct Contact</p>
-                    <div class="space-y-3 text-xs">
-                        <p class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            <a href="tel:+18005550199" class="hover:text-brandText transition-colors font-semibold">+1 (800) 555-0199</a>
-                        </p>
-                        <p class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            <span>contact@apexdigital.tech</span>
-                        </p>
-                        <p class="text-textMuted">
-                            100 Tech Tower Plaza, Suite 400<br>San Francisco, CA 94105
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-textMuted">
-                <p>&copy; 2025 Apex Digital Platform Inc. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 sm:mt-0">
-                    <a href="#audit-form" class="hover:text-brandText transition-colors">Privacy Policy</a>
-                    <a href="#audit-form" class="hover:text-brandText transition-colors">Terms of Service</a>
-                    <a href="#audit-form" class="hover:text-brandText transition-colors">Security Statement</a>
-                </div>
-            </div>
+    <!-- Testimonials / Stories of Grace -->
+    <section id="testimonials" class="py-20 bg-surface border-b border-surface-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary-dark">Stories of Grace</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">
+            What Sisters in Christ Share
+          </h2>
+          <p class="text-base sm:text-lg text-muted">
+            Read how Catholic women have found clarity, calm, and renewed purpose through coaching.
+          </p>
         </div>
-    </footer>
 
-    <!-- Interactive Mobile Menu Toggle Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const btn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-cream p-6 rounded-2xl border border-surface-border flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="text-secondary flex gap-1 text-sm">★★★★★</div>
+              <p class="text-sm text-body/90 font-serif italic leading-relaxed">
+                "Sharon’s guidance gave me the courage to surrender my overwhelming control tendencies. I felt truly understood as a Catholic mother trying to balance family life with my personal calling."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-border flex items-center justify-between">
+              <div>
+                <span class="block font-serif font-bold text-primary text-sm">Maria K.</span>
+                <span class="text-xs text-muted">Mother of 4 & Professional</span>
+              </div>
+              <span class="text-[10px] bg-secondary-light text-secondary-dark font-semibold px-2 py-1 rounded">Peace Focus</span>
+            </div>
+          </div>
 
-            if (btn && menu) {
-                btn.addEventListener('click', function() {
-                    menu.classList.toggle('hidden');
-                });
-            }
-        });
-    </script>
+          <!-- Testimonial 2 -->
+          <div class="bg-cream p-6 rounded-2xl border border-surface-border flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="text-secondary flex gap-1 text-sm">★★★★★</div>
+              <p class="text-sm text-body/90 font-serif italic leading-relaxed">
+                "I was at a crossroads in my career and felt spiritually paralyzed by fear. Working with Sharon helped me quiet the noise and hear God's gentle promptings clearly."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-border flex items-center justify-between">
+              <div>
+                <span class="block font-serif font-bold text-primary text-sm">Teresa M.</span>
+                <span class="text-xs text-muted">Young Adult / Career Discernment</span>
+              </div>
+              <span class="text-[10px] bg-secondary-light text-secondary-dark font-semibold px-2 py-1 rounded">Vocation Focus</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-cream p-6 rounded-2xl border border-surface-border flex flex-col justify-between space-y-4">
+            <div class="space-y-3">
+              <div class="text-secondary flex gap-1 text-sm">★★★★★</div>
+              <p class="text-sm text-body/90 font-serif italic leading-relaxed">
+                "Unlike secular life coaching, Sharon grounds everything in Church teachings and prayer. My daily quiet time is no longer a chore—it's my anchor."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-surface-border flex items-center justify-between">
+              <div>
+                <span class="block font-serif font-bold text-primary text-sm">Christina S.</span>
+                <span class="text-xs text-muted">Parish Leader & Entrepreneur</span>
+              </div>
+              <span class="text-[10px] bg-secondary-light text-secondary-dark font-semibold px-2 py-1 rounded">Prayer Focus</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Contact & Session Desire Form Section -->
+    <section id="contact" class="py-20 lg:py-28 bg-gradient-to-b from-cream via-cream to-secondary-light/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Contact Info Column -->
+          <div class="lg:col-span-5 space-y-8">
+            
+            <div class="space-y-4">
+              <span class="text-xs font-bold uppercase tracking-widest text-secondary-dark">Get in Touch</span>
+              <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">
+                Begin Your Journey Today
+              </h2>
+              <p class="text-base text-muted leading-relaxed">
+                Take a simple, brave step toward peace. Fill out the form with your session desires, and Sharon will reach out within 24–48 business hours.
+              </p>
+            </div>
+
+            <!-- Contact Direct Channels -->
+            <div class="space-y-4 pt-4">
+              
+              <a href="tel:18005557427" class="flex items-center gap-4 p-4 rounded-xl bg-surface border border-surface-border hover:border-secondary transition-colors group">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-xs text-muted block font-medium">Direct Telephone</span>
+                  <span class="text-sm font-bold text-primary">(800) 555-7427</span>
+                </div>
+              </a>
+
+              <a href="mailto:sharon@sharonkcoaching.com" class="flex items-center gap-4 p-4 rounded-xl bg-surface border border-surface-border hover:border-secondary transition-colors group">
+                <div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary-dark flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-xs text-muted block font-medium">Email Inquiries</span>
+                  <span class="text-sm font-bold text-primary">sharon@sharonkcoaching.com</span>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="p-6 rounded-2xl bg-surface border border-surface-border space-y-3">
+              <h4 class="font-serif font-bold text-primary text-base">Privacy & Confidentiality</h4>
+              <p class="text-xs text-muted leading-relaxed">
+                Your personal details, prayer intentions, and coaching goals are held with the utmost respect and confidentiality.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Form Column -->
+          <div class="lg:col-span-7">
+            <div class="bg-surface rounded-3xl p-6 sm:p-10 border border-surface-border shadow-elevated">
+              
+              <div class="mb-8">
+                <h3 class="font-serif text-2xl font-bold text-primary">Schedule Your Session Desire</h3>
+                <p class="text-xs sm:text-sm text-muted">Complete the details below to request your consultation or coaching package.</p>
+              </div>
+
+              <!-- Functional Form -->
+              <form id="coachingForm" action="javascript:void(0);" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                
+                <!-- Full Name & Email Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label for="fullName" class="block text-xs font-semibold text-body mb-2 uppercase tracking-wider">
+                      Full Name <span class="text-accent">*</span>
+                    </label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="e.g. Maria Teresa" class="w-full px-4 py-3 text-sm rounded-xl border border-surface-border focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-cream/50">
+                  </div>
+                  <div>
+                    <label for="email" class="block text-xs font-semibold text-body mb-2 uppercase tracking-wider">
+                      Email Address <span class="text-accent">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full px-4 py-3 text-sm rounded-xl border border-surface-border focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-cream/50">
+                  </div>
+                </div>
+
+                <!-- Phone & Preferred Format -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label for="phone" class="block text-xs font-semibold text-body mb-2 uppercase tracking-wider">
+                      Phone Number
+                    </label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" class="w-full px-4 py-3 text-sm rounded-xl border border-surface-border focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-cream/50">
+                  </div>
+                  <div>
+                    <label for="format" class="block text-xs font-semibold text-body mb-2 uppercase tracking-wider">
+                      Preferred Session Format
+                    </label>
+                    <select id="format" name="format" class="w-full px-4 py-3 text-sm rounded-xl border border-surface-border focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-cream/50 text-body">
+                      <option value="Zoom Virtual Call">Zoom Virtual Video Call</option>
+                      <option value="Phone Call">Phone Call</option>
+                      <option value="In-Person (Select Locations)">In-Person (If Local)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- REQUIRED CLIENT FEATURE: SESSIONS DESIRE OPTION -->
+                <div>
+                  <label for="sessionDesire" class="block text-xs font-semibold text-body mb-2 uppercase tracking-wider">
+                    Select Your Session Desire / Primary Coaching Focus <span class="text-accent">*</span>
+                  </label>
+                  <select id="sessionDesire" name="sessionDesire" required class="w-full px-4 py-3 text-sm rounded-xl border-2 border-secondary/40 focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all bg-secondary-light/30 text-primary font-medium">
+                    <option value="" disabled selected>-- Choose the Session Goal or Package You Desire --</option>
+                    <option value="Discovery Session">Free 30-Minute Discovery & Clarity Call</option>
+                    <option value="Grace & Purpose Intensive (6 Weeks)">The Grace & Purpose Intensive (6 Weeks)</option>
+                    <option value="Divine Peace & Vocation Mastery (12 Weeks)">Divine Peace & Vocation Mastery (12-Week Transformation)</option>
+                    <option value="Anxiety & Divine Peace Support">Divine Peace & Anxiety Relief</option>
+                    <option value="Vocation & Career Discernment">Vocation & Life Direction Discernment</option>
+                    <option value="Motherhood & Family Balance">Motherhood, Family & Work Balance</option>
+                    <option value="Singlehood & Purpose">Singlehood with Purpose & Faith</option>
+                    <option value="Prayer & Spiritual Habit Building">Deepening Prayer Life & Habit Building</option>
+                    <option value="Custom Coaching Desire">Other / Custom Session Request</option>
+                  </select>
+                </div>
+
+                <!-- Message / Context -->
+                <div>
+                  <label for="notes" class="block text-xs font-semibold text-body mb-2 uppercase tracking-wider">
+                    Share a Little About Your Current Season & Goals
+                  </label>
+                  <textarea id="notes" name="notes" rows="4" placeholder="What is currently on your heart? Where would you love to see God’s peace and clarity in your life?" class="w-full px-4 py-3 text-sm rounded-xl border border-surface-border focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-cream/50"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitBtn" class="w-full bg-primary hover:bg-primary-hover text-white text-base font-semibold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 group">
+                  <span>Submit Session Request</span>
+                  <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </button>
+
+                <p class="text-[11px] text-center text-muted">
+                  By submitting, you agree to receive a personal response email or phone call from Sharon K Coaching.
+                </p>
+
+              </form>
+
+              <!-- Success Message Box (Hidden by default) -->
+              <div id="formSuccess" class="hidden p-6 rounded-2xl bg-green-50 border border-green-200 text-center space-y-3 mt-4">
+                <div class="w-12 h-12 rounded-full bg-green-100 text-green-700 flex items-center justify-center mx-auto text-xl">
+                  ✓
+                </div>
+                <h4 class="font-serif font-bold text-green-900 text-xl">Thank You for Reaching Out!</h4>
+                <p class="text-xs text-green-800 leading-relaxed max-w-md mx-auto">
+                  Your session request has been received with care. Sharon will personally review your request and get back to you shortly to confirm your booking.
+                </p>
+                <button onclick="resetForm()" class="text-xs text-green-700 font-bold underline pt-2">Send another inquiry</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-surface border-b border-surface-border">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="text-center space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary-dark">Common Questions</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          
+          <details class="group bg-cream p-6 rounded-2xl border border-surface-border [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between cursor-pointer font-serif font-bold text-primary text-lg">
+              <span>How is Catholic Life Coaching different from Therapy?</span>
+              <span class="transition group-open:rotate-180 text-secondary">▼</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-muted leading-relaxed">
+              Therapy primarily focuses on clinical mental health, healing deep past psychological trauma, and diagnosing conditions. Catholic life coaching focuses on where you are today and where God is inviting you to grow. We focus on actionable goals, spiritual alignment, mindset renewal, and practical strategies while honoring Church teaching.
+            </p>
+          </details>
+
+          <details class="group bg-cream p-6 rounded-2xl border border-surface-border [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between cursor-pointer font-serif font-bold text-primary text-lg">
+              <span>How does coaching differ from Spiritual Direction?</span>
+              <span class="transition group-open:rotate-180 text-secondary">▼</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-muted leading-relaxed">
+              Spiritual direction focuses almost exclusively on your prayer life and relationship with God. Catholic life coaching includes spiritual integration, but also directly addresses practical life habits, time management, career decisions, mindsets, boundaries, and actionable personal development goals.
+            </p>
+          </details>
+
+          <details class="group bg-cream p-6 rounded-2xl border border-surface-border [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between cursor-pointer font-serif font-bold text-primary text-lg">
+              <span>Are sessions conducted virtually or in person?</span>
+              <span class="transition group-open:rotate-180 text-secondary">▼</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-muted leading-relaxed">
+              Most sessions are held virtually via Zoom or by phone, allowing clients from anywhere across the country to participate in the comfort and privacy of their own homes.
+            </p>
+          </details>
+
+          <details class="group bg-cream p-6 rounded-2xl border border-surface-border [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between cursor-pointer font-serif font-bold text-primary text-lg">
+              <span>What if I am returning to my faith or feel spiritually weak?</span>
+              <span class="transition group-open:rotate-180 text-secondary">▼</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-muted leading-relaxed">
+              You are welcome here exactly as you are! Sharon provides a warm, non-judgmental space. Whether you go to daily Mass or are just taking your first steps back into prayer, coaching meets you with gentle grace and encouragement.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white pt-16 pb-12 border-t border-primary-hover">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-white font-serif font-bold text-lg">
+              SK
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-white">Sharon K Coaching</span>
+          </div>
+          <p class="text-xs text-white/80 leading-relaxed max-w-sm">
+            Catholic Life Coaching for Women: Faith, Purpose & Divine Peace. Supporting faithful women as they step into God’s grace and clear purpose.
+          </p>
+          <div class="pt-2 text-xs text-secondary font-medium">
+            ✝ Grounded in Holy Scripture & Catholic Tradition
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-base text-secondary">Navigation</h4>
+          <ul class="space-y-2 text-xs text-white/80">
+            <li><a href="#about" class="hover:text-white transition-colors">About Sharon</a></li>
+            <li><a href="#pillars" class="hover:text-white transition-colors">The Coaching Method</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Sessions & Packages</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors">Stories of Grace</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-base text-secondary">Connect Directly</h4>
+          <ul class="space-y-2 text-xs text-white/80">
+            <li>
+              <a href="tel:18005557427" class="hover:text-white transition-colors flex items-center gap-2">
+                <span>📞 Call:</span> (800) 555-7427
+              </a>
+            </li>
+            <li>
+              <a href="mailto:sharon@sharonkcoaching.com" class="hover:text-white transition-colors flex items-center gap-2">
+                <span>✉️ Email:</span> sharon@sharonkcoaching.com
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-white transition-colors flex items-center gap-2">
+                <span>📍 Location:</span> Virtual / Online Nationwide
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/60 gap-4">
+        <p>© <span id="year"></span> Sharon K Coaching. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#contact" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#contact" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="#top" class="hover:text-white transition-colors">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // Update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking nav links
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Select Session Desire Option function
+    function selectSessionOption(optionValue) {
+      const selectElement = document.getElementById('sessionDesire');
+      if (selectElement) {
+        selectElement.value = optionValue;
+        
+        // Scroll to form smoothly
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Highlight form field temporarily
+        selectElement.classList.add('ring-4', 'ring-secondary');
+        setTimeout(() => {
+          selectElement.classList.remove('ring-4', 'ring-secondary');
+        }, 1500);
+      }
+    }
+
+    // Form Handling Simulation
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('coachingForm');
+      const successBox = document.getElementById('formSuccess');
+
+      // Hide form, show success state
+      form.classList.add('hidden');
+      successBox.classList.remove('hidden');
+    }
+
+    function resetForm() {
+      const form = document.getElementById('coachingForm');
+      const successBox = document.getElementById('formSuccess');
+      
+      form.reset();
+      form.classList.remove('hidden');
+      successBox.classList.add('hidden');
+    }
+  </script>
+
 </body>
 </html>
