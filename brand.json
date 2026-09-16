@@ -1,0 +1,19 @@
+{
+  "brand_name": "Apex Digital",
+  "colors": {
+    "primary": "#2563EB",
+    "primary_hover": "#1D4ED8",
+    "secondary": "#0284C7",
+    "accent": "#38BDF8",
+    "background": "#0F172A",
+    "surface": "#1E293B",
+    "surface_border": "#334155",
+    "text": "#F8FAFC",
+    "text_muted": "#94A3B8"
+  },
+  "fonts": {
+    "heading": "Plus Jakarta Sans, sans-serif",
+    "body": "Inter, sans-serif"
+  },
+  "tone": "High-tech, Corporate, Modern"
+}
