@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Digital | High-Performance Enterprise Solutions</title>
+    <!-- SEO Title (< 60 chars) -->
+    <title>Catholic Life Coach for Women | Sharon Coaching</title>
+    <!-- Meta Description (150-160 chars) -->
+    <meta name="description" content="Find clarity, purpose, and peace in your faith, marriage, and motherhood with Sharon, a Catholic life coach for women. Schedule your free discovery call today.">
+    <link rel="canonical" href="https://sharoncoaching.com/catholic-life-coach-for-women">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Tailwind Configuration -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Configuration -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              primary: '#2563EB',
-              'primary-hover': '#1D4ED8',
-              secondary: '#0284C7',
-              accent: '#38BDF8',
-              background: '#0F172A',
-              surface: '#1E293B',
-              'surface-border': '#334155',
-              text: '#F8FAFC',
-              'text-muted': '#94A3B8',
+              primary: '#1E3A8A',       // Deep Marian Navy
+              'primary-hover': '#172554',
+              secondary: '#C2410C',     // Warm Terracotta / Accent
+              accent: '#D97706',        // Soft Gold Accent
+              background: '#FDFBF7',    // Warm Cream background
+              surface: '#F5F0EB',       // Soft Ivory surface
+              'surface-border': '#E7E5E4', // Soft Warm Gray border
+              text: '#1C1917',          // Deep Charcoal Text
+              'text-muted': '#57534E',    // Warm Muted Slate
             },
             fontFamily: {
-              heading: ['Plus Jakarta Sans', 'sans-serif'],
+              heading: ['Plus Jakarta Sans', 'serif'],
               body: ['Inter', 'sans-serif'],
             }
           }
@@ -33,313 +39,656 @@
       }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FAQ Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Catholic life coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Catholic life coaching is a collaborative, goal-oriented process grounded in Catholic anthropology and faith. It helps women align their daily habits, mindset, and decisions with God's design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is mindset coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mindset coaching focuses on identifying unhelpful thought patterns and replacing them with truth, allowing you to respond to life's challenges with grace, clarity, and intentionality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is coaching different from therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Therapy diagnoses and treats psychological conditions and past clinical trauma. Catholic life coaching focuses on present circumstances, future goals, thought habits, and practical action."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is coaching the same as spiritual direction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Spiritual direction focuses directly on one's relationship with God and prayer life. Coaching focuses on practical daily decisions, personal goals, and mindset aligned with faith."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why would I need a coach if God is the one who changes us?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "God works through human means, community, and prudent counsel. Coaching provides accountability, structure, and clarity as you cooperate with God's grace in your daily life."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
-<body class="bg-background text-text font-body antialiased selection:bg-accent selection:text-background">
+<body class="bg-background text-text font-body antialiased selection:bg-accent selection:text-white">
 
-    <!-- ADJUSTED NAVIGATION BAR -->
-    <header class="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-surface-border/60">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center space-x-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <span class="font-heading font-extrabold text-xl tracking-tight text-text">APEX <span class="text-accent">DIGITAL</span></span>
-                </a>
-
-                <!-- Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#solutions" class="text-sm font-medium text-text-muted hover:text-accent transition-colors">Solutions</a>
-                    <a href="#capabilities" class="text-sm font-medium text-text-muted hover:text-accent transition-colors">Capabilities</a>
-                    <a href="#architecture" class="text-sm font-medium text-text-muted hover:text-accent transition-colors">Architecture</a>
-                    <a href="#impact" class="text-sm font-medium text-text-muted hover:text-accent transition-colors">Enterprise Impact</a>
-                </nav>
-
-                <!-- Navigation Action -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg font-heading text-sm font-semibold text-white bg-primary hover:bg-primary-hover shadow-lg shadow-primary/25 transition-all duration-200 hover:-translate-y-0.5">
-                        Start Transformation
-                    </a>
+    <!-- STRATEGY BRIEF SUMMARY OVERVIEW (DOCUMENTATION SECTION) -->
+    <aside aria-label="Strategy Summary" class="bg-primary text-white border-b border-surface-border px-4 py-6">
+        <div class="max-w-7xl mx-auto text-xs leading-relaxed space-y-3">
+            <div class="flex items-center justify-between border-b border-white/20 pb-2">
+                <span class="font-heading font-bold uppercase tracking-wider text-accent">Strategic Strategy Summary & Client Profile</span>
+                <span class="bg-white/10 px-2 py-0.5 rounded text-[10px]">Sharon Coaching &bull; Catholic Life Coach for Women</span>
+            </div>
+            <div class="grid md:grid-cols-4 gap-4 pt-1">
+                <div>
+                    <strong class="text-accent block">The Ideal Client:</strong>
+                    A Catholic woman, mother, or wife who deeply loves her faith but feels overwhelmed, stuck, or uncertain in her daily vocation and identity.
                 </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button type="button" class="text-text-muted hover:text-text p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
+                <div>
+                    <strong class="text-accent block">Her Central Struggle:</strong>
+                    Juggling expectations, interior doubt, exhaustion, losing sight of her God-given design amidst marriage, motherhood, and work responsibilities.
+                </div>
+                <div>
+                    <strong class="text-accent block">Sharon’s Positioning:</strong>
+                    A compassionate peer who has walked through marriage, motherhood, returning to faith, and finding vocation—not a perfect expert, but a fellow pilgrim.
+                </div>
+                <div>
+                    <strong class="text-accent block">Primary Conversion Goal:</strong>
+                    Scheduling a low-friction, zero-pressure 30-Minute Free Discovery Call to start an authentic relationship.
                 </div>
             </div>
         </div>
+    </aside>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-surface-border px-4 pt-2 pb-6 space-y-3">
-            <a href="#solutions" class="block px-3 py-2 rounded-md text-base font-medium text-text-muted hover:text-text hover:bg-surface-border/50">Solutions</a>
-            <a href="#capabilities" class="block px-3 py-2 rounded-md text-base font-medium text-text-muted hover:text-text hover:bg-surface-border/50">Capabilities</a>
-            <a href="#architecture" class="block px-3 py-2 rounded-md text-base font-medium text-text-muted hover:text-text hover:bg-surface-border/50">Architecture</a>
-            <a href="#impact" class="block px-3 py-2 rounded-md text-base font-medium text-text-muted hover:text-text hover:bg-surface-border/50">Enterprise Impact</a>
-            <a href="#contact" class="block w-full text-center mt-4 px-5 py-3 rounded-lg font-heading text-sm font-semibold text-white bg-primary hover:bg-primary-hover">
-                Start Transformation
-            </a>
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-surface-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-heading font-bold text-xl shadow-md">
+                        S
+                    </div>
+                    <div>
+                        <span class="font-heading font-bold text-lg text-primary block leading-tight">Sharon</span>
+                        <span class="text-xs text-text-muted font-medium tracking-wide">Catholic Life Coach for Women</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-text-muted">
+                    <a href="#about" class="hover:text-primary transition-colors">Sharon's Story</a>
+                    <a href="#how-it-works" class="hover:text-primary transition-colors">How It Works</a>
+                    <a href="#options" class="hover:text-primary transition-colors">Coaching Options</a>
+                    <a href="#testimonials" class="hover:text-primary transition-colors">Client Stories</a>
+                    <a href="#faq" class="hover:text-primary transition-colors">FAQ</a>
+                </nav>
+
+                <!-- Primary CTA -->
+                <div class="hidden md:flex">
+                    <a href="#options" class="px-5 py-2.5 rounded-full font-heading text-xs font-bold uppercase tracking-wider text-white bg-secondary hover:bg-secondary/90 transition-all shadow-md">
+                        Schedule Free Call
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
-        <!-- Grid Background Pattern -->
-        <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30 pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="relative py-16 lg:py-24 bg-gradient-to-b from-surface/60 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-surface border border-surface-border text-xs font-semibold text-accent">
-                        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                        <span>Enterprise Tech Innovation</span>
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary">
+                        <span>Faith-Based Life Coaching for Women</span>
                     </div>
 
-                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-text leading-[1.15]">
-                        Engineering High-Scale Systems for <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary">Market Leaders</span>
+                    <!-- Main H1 -->
+                    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary leading-tight">
+                        Find Peace, Purpose, and Joy in Your God-Given Design
                     </h1>
 
-                    <p class="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                        Apex Digital architects resilient cloud infrastructures, high-throughput microservices, and bespoke enterprise software engineered for global scale and zero downtime.
+                    <p class="text-base sm:text-lg text-text-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        You don’t have to carry the weight of perfection alone. As a <strong>Catholic life coach for women</strong>, I help wives, mothers, and faithful women navigate life’s transitions with grace, clarity, and deep confidence in Christ.
                     </p>
 
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-semibold text-white bg-primary hover:bg-primary-hover shadow-lg shadow-primary/30 transition-all text-center">
-                            Schedule Technical Audit
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#options" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary/90 shadow-lg transition-all text-center">
+                            Schedule Your Free Discovery Call
                         </a>
-                        <a href="#solutions" class="w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-semibold text-text bg-surface hover:bg-surface-border/60 border border-surface-border transition-all text-center">
-                            Explore Platform Capabilities
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full font-heading text-sm font-semibold text-primary border border-primary/30 hover:bg-surface transition-all text-center">
+                            Meet Sharon
                         </a>
                     </div>
 
-                    <!-- Trust Indicators -->
-                    <div class="pt-6 border-t border-surface-border/60 grid grid-cols-3 gap-6 text-center lg:text-left">
-                        <div>
-                            <p class="font-heading text-2xl font-bold text-text">99.999%</p>
-                            <p class="text-xs text-text-muted">Target SLA Availability</p>
-                        </div>
-                        <div>
-                            <p class="font-heading text-2xl font-bold text-text">4.2x</p>
-                            <p class="text-xs text-text-muted">Average Deployment Velocity</p>
-                        </div>
-                        <div>
-                            <p class="font-heading text-2xl font-bold text-text">Zero-Trust</p>
-                            <p class="text-xs text-text-muted">Compliance Security Architecture</p>
-                        </div>
-                    </div>
+                    <p class="text-xs text-text-muted italic pt-1">
+                        Free, 30 minutes, and zero pressure to enroll.
+                    </p>
                 </div>
 
-                <!-- Technical Dashboard Graphic -->
+                <!-- Hero Image -->
                 <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary to-accent opacity-30 blur-xl"></div>
-                        <div class="relative bg-surface border border-surface-border rounded-2xl p-6 shadow-2xl space-y-4">
-                            <div class="flex items-center justify-between border-b border-surface-border/80 pb-4">
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-                                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-                                </div>
-                                <span class="text-xs font-mono text-text-muted">system-mesh-v4.1.0</span>
-                            </div>
-                            
-                            <div class="space-y-3 font-mono text-xs">
-                                <div class="bg-background/80 p-3 rounded-lg border border-surface-border/50 flex items-center justify-between">
-                                    <span class="text-text-muted">Global Edge Nodes</span>
-                                    <span class="text-accent font-semibold">142 Active</span>
-                                </div>
-                                <div class="bg-background/80 p-3 rounded-lg border border-surface-border/50 flex items-center justify-between">
-                                    <span class="text-text-muted">Average Request Latency</span>
-                                    <span class="text-emerald-400 font-semibold">12ms</span>
-                                </div>
-                                <div class="bg-background/80 p-3 rounded-lg border border-surface-border/50 flex items-center justify-between">
-                                    <span class="text-text-muted">Automated Failover</span>
-                                    <span class="text-primary font-semibold">Operational</span>
-                                </div>
-                            </div>
-
-                            <div class="pt-2">
-                                <img src="https://placehold.co/600x350/1E293B/38BDF8?text=Realtime+Infrastructure+Telemetry" alt="Apex System Telemetry Dashboard" class="rounded-lg w-full object-cover border border-surface-border/60">
-                            </div>
-                        </div>
+                    <div class="relative mx-auto max-w-md">
+                        <div class="absolute inset-0 bg-accent/20 rounded-3xl transform rotate-3 scale-105"></div>
+                        <img src="https://placehold.co/600x700/F5F0EB/1E3A8A?text=Sharon+Catholic+Life+Coach+For+Women" 
+                             alt="Sharon, Catholic life coach for women, sitting in a warm, welcoming home office with a cup of tea." 
+                             class="relative rounded-2xl shadow-xl border border-surface-border object-cover w-full h-[420px]">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CORE CAPABILITIES (ENGINEERING FOCUS) -->
-    <section id="solutions" class="py-20 bg-surface/50 border-y border-surface-border/60">
+    <!-- ALTERNATIVE HERO HEADLINES REFERENCE (SEO / COPY VARIATIONS) -->
+    <section class="bg-surface py-4 border-y border-surface-border/60 text-xs text-text-muted">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-1">
+            <span class="font-bold text-primary">Alternative Hero Messaging Options:</span>
+            <span class="block italic sm:inline">1. "Walk in Confidence, Deepen Your Faith, and Embrace Your Unique God-Given Design" &bull; 2. "From Overwhelmed to Overcoming: Catholic Life Coaching for Faith-Filled Women"</span>
+        </div>
+    </section>
+
+    <!-- SHARON'S STORY & RELATABLE TRUST -->
+    <section id="about" class="py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-surface border border-surface-border rounded-3xl p-8 sm:p-12 shadow-sm space-y-8">
+                <div class="max-w-3xl space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">A Fellow Pilgrim On The Journey</h2>
+                    <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-primary">I Don't Have a Perfect Life—And I Don't Expect You To Either</h3>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5">
+                        <img src="https://placehold.co/500x600/E7E5E4/1E3A8A?text=Sharon+Motherhood+%26+Faith" 
+                             alt="A Catholic mother quietly praying and reflecting during a peaceful morning moment." 
+                             class="rounded-xl border border-surface-border shadow-sm object-cover w-full h-auto">
+                    </div>
+
+                    <div class="md:col-span-7 space-y-4 text-text-muted text-sm sm:text-base leading-relaxed">
+                        <p>
+                            If you ever feel like everyone else has their life completely figured out while you’re quietly drowning in doubts, laundry, and unanswered questions—I want you to take a deep breath. You are in good company.
+                        </p>
+                        <p>
+                            My own path has not been a straight line. Through years of marriage, the noisy and holy mess of motherhood, a period of questioning and eventually returning home to the Catholic faith, and searching for meaningful work that respected my family, I learned a profound truth: <strong>God meets us in the middle of our mess, not after we’ve cleaned it up.</strong>
+                        </p>
+                        <p>
+                            As a <strong>Catholic mindset coach</strong> and mentor, I don’t stand above you with all the answers. I stand beside you. I help women untangle the noise, recognize unhelpful thought loops, and step into the distinct, beautiful mission God tailored specifically for them.
+                        </p>
+                        <p class="pt-2">
+                            <a href="#" class="text-primary font-bold hover:underline">Learn more about Sharon's story and background in Catholic Ministry &rarr;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="py-20 bg-surface/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold text-accent tracking-widest uppercase font-heading">Core Engineering Services</h2>
-                <p class="font-heading text-3xl sm:text-4xl font-extrabold text-text">Built for Scale, Security, and Speed</p>
-                <p class="text-text-muted text-base">We replace legacy friction with modern, resilient digital platforms engineered to support exponential enterprise growth.</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Your Journey Forward</h2>
+                <h3 class="font-heading text-3xl font-extrabold text-primary">How Catholic Life Coaching Works</h3>
+                <p class="text-text-muted text-sm sm:text-base">A simple, structured, and compassionate 4-step path toward personal growth and clarity.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
+                        01
+                    </div>
+                    <h4 class="font-heading font-bold text-lg text-primary">Step 1: Schedule a Free Discovery Call</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">
+                        A low-key 30-minute conversation over the phone or Zoom. No pressure, no obligations—just a quiet space to connect and talk.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
+                        02
+                    </div>
+                    <h4 class="font-heading font-bold text-lg text-primary">Step 2: Share Challenges & Goals</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">
+                        Tell me what’s feeling heavy—whether it’s Catholic motherhood coaching needs, marriage dynamics, or discerning work—and where you long to be.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
+                        03
+                    </div>
+                    <h4 class="font-heading font-bold text-lg text-primary">Step 3: Choose Your Coaching Path</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">
+                        Together, we’ll select the option that fits your pace, budget, and season of life—from a single session to a deeper multi-week series.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-background border border-surface-border p-6 rounded-2xl space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-primary text-white font-heading font-bold flex items-center justify-center text-sm">
+                        04
+                    </div>
+                    <h4 class="font-heading font-bold text-lg text-primary">Step 4: Move Forward in Faith</h4>
+                    <p class="text-text-muted text-sm leading-relaxed">
+                        Step into freedom with personalized support, practical tools, mindset shifts, and encouragement rooted firmly in Christ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COACHING OPTIONS -->
+    <section id="options" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Flexible Options</h2>
+                <h3 class="font-heading text-3xl sm:text-4xl font-extrabold text-primary">Coaching Paths Tailored To Your Season</h3>
+                <p class="text-text-muted text-sm sm:text-base">Transparent pricing without high-pressure countdowns or false scarcity. Start where you feel comfortable.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+                <!-- Option 1: Primary Recommended -->
+                <div class="bg-surface border-2 border-primary rounded-3xl p-6 flex flex-col justify-between shadow-md relative">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                        Recommended Starting Point
+                    </div>
+                    <div class="space-y-4 pt-2">
+                        <h4 class="font-heading font-bold text-xl text-primary">Free Discovery Call</h4>
+                        <p class="text-xs font-semibold text-secondary uppercase">30 Minutes &bull; Free &bull; One Time</p>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            A zero-commitment opportunity to share your story, experience my coaching style, and discern if we are a good fit.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-white bg-primary hover:bg-primary-hover transition-all">
+                            Book Free Call
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Option 2 -->
+                <div class="bg-background border border-surface-border rounded-3xl p-6 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <h4 class="font-heading font-bold text-xl text-primary">Individual Session</h4>
+                        <p class="text-xs font-semibold text-text-muted uppercase">60 Minutes &bull; $100</p>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            Ideal for tackling a specific decision, working through a sudden hurdle, or getting focused clarity on a immediate issue.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-primary hover:bg-surface transition-all">
+                            Select Session
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Option 3 -->
+                <div class="bg-background border border-surface-border rounded-3xl p-6 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <h4 class="font-heading font-bold text-xl text-primary">6-Week Transformation</h4>
+                        <p class="text-xs font-semibold text-text-muted uppercase">Six 60-Min Sessions &bull; $480</p>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            Deep dive into core mindset shifts, establishing holy habits, and overcoming persistent emotional or vocational hurdles.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-primary hover:bg-surface transition-all">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Option 4 -->
+                <div class="bg-background border border-surface-border rounded-3xl p-6 flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <h4 class="font-heading font-bold text-xl text-primary">12-Week Transformation</h4>
+                        <p class="text-xs font-semibold text-text-muted uppercase">Twelve 60-Min Sessions &bull; $950</p>
+                        <p class="text-text-muted text-sm leading-relaxed">
+                            Comprehensive support for sustained personal development, Catholic marriage coaching themes, or major life shifts.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="#contact-anchor" class="block w-full py-3 text-center rounded-full font-heading text-xs font-bold text-primary border border-primary hover:bg-surface transition-all">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="#" class="text-xs font-semibold text-primary hover:underline">Explore detailed outlines of individual coaching & transformation packages &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-surface/50 border-y border-surface-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Verified Client Testimonials</h2>
+                <h3 class="font-heading text-3xl font-extrabold text-primary">Stories of Growth, Grace, and Identity in Christ</h3>
+                <p class="text-text-muted text-sm">Real experiences shared by women who have worked directly with Sharon.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-surface border border-surface-border p-8 rounded-2xl hover:border-accent/50 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-heading text-xl font-bold text-text mb-3">Cloud Microservices & Mesh</h3>
-                    <p class="text-text-muted text-sm leading-relaxed mb-4">Decouple monolithic systems into resilient, fault-tolerant cloud architectures designed for continuous integration and global deployment.</p>
-                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-accent hover:text-text transition-colors">
-                        Architectural Specs &rarr;
-                    </a>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-surface border border-surface-border p-8 rounded-2xl hover:border-accent/50 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-heading text-xl font-bold text-text mb-3">Zero-Trust Enterprise Security</h3>
-                    <p class="text-text-muted text-sm leading-relaxed mb-4">Implement end-to-end encryption, automated compliance protocols, and strict access governance across all enterprise endpoints.</p>
-                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-accent hover:text-text transition-colors">
-                        Security Framework &rarr;
-                    </a>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-surface border border-surface-border p-8 rounded-2xl hover:border-accent/50 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="font-heading text-xl font-bold text-text mb-3">High-Throughput Analytics & AI</h3>
-                    <p class="text-text-muted text-sm leading-relaxed mb-4">Process millions of data pipelines per second with custom real-time analytics, machine learning engines, and predictive telemetry.</p>
-                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-accent hover:text-text transition-colors">
-                        Data Pipeline Architecture &rarr;
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SYSTEM METRICS SECTION -->
-    <section id="impact" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-r from-surface via-surface to-background border border-surface-border rounded-3xl p-8 md:p-12 relative overflow-hidden">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-6">
-                        <h2 class="font-heading text-3xl font-extrabold text-text">Proven Performance in High-Stress Environments</h2>
-                        <p class="text-text-muted text-sm leading-relaxed">
-                            Apex Digital architectures power critical financial, logistics, and healthcare systems worldwide. Our infrastructure guarantees sub-50ms global latencies and seamless failover protection.
+                <!-- Testimonial 1 -->
+                <div class="bg-background border border-surface-border p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="text-accent flex space-x-1">
+                            ★★★★★
+                        </div>
+                        <p class="text-text-muted text-sm italic leading-relaxed">
+                            "For the first time in years, I felt completely heard and understood without judgment. Sharon helped me recognize my unique, God-given design when I felt utterly lost in motherhood."
                         </p>
-                        <div class="space-y-3">
-                            <div class="flex items-center space-x-3 text-sm">
-                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span class="text-text">SOC 2 Type II & ISO 27001 Security Standardized</span>
-                            </div>
-                            <div class="flex items-center space-x-3 text-sm">
-                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span class="text-text">Automated Multi-Region Disaster Recovery</span>
-                            </div>
-                            <div class="flex items-center space-x-3 text-sm">
-                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                                <span class="text-text">Containerized Orchestration via Kubernetes</span>
-                            </div>
-                        </div>
                     </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-background/80 border border-surface-border p-6 rounded-xl text-center">
-                            <p class="font-heading text-3xl font-extrabold text-accent">10B+</p>
-                            <p class="text-xs text-text-muted mt-1">Daily API Calls Handled</p>
-                        </div>
-                        <div class="bg-background/80 border border-surface-border p-6 rounded-xl text-center">
-                            <p class="font-heading text-3xl font-extrabold text-accent">&lt; 15ms</p>
-                            <p class="text-xs text-text-muted mt-1">Global P99 Latency</p>
-                        </div>
-                        <div class="bg-background/80 border border-surface-border p-6 rounded-xl text-center">
-                            <p class="font-heading text-3xl font-extrabold text-accent">65%</p>
-                            <p class="text-xs text-text-muted mt-1">Avg Cloud Spend Reduction</p>
-                        </div>
-                        <div class="bg-background/80 border border-surface-border p-6 rounded-xl text-center">
-                            <p class="font-heading text-3xl font-extrabold text-accent">100%</p>
-                            <p class="text-xs text-text-muted mt-1">Audit Compliance Record</p>
-                        </div>
+                    <div class="pt-6 border-t border-surface-border/60 mt-6">
+                        <p class="font-heading font-bold text-sm text-primary">Maria C.</p>
+                        <p class="text-xs text-text-muted">Mother of Three &bull; Catholic Motherhood Coaching Client</p>
                     </div>
                 </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-background border border-surface-border p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="text-accent flex space-x-1">
+                            ★★★★★
+                        </div>
+                        <p class="text-text-muted text-sm italic leading-relaxed">
+                            "Sharon brought such profound encouragement and inspiration into my life. Her coaching provided greater self-awareness and rooted my confidence where it belonged—my true identity in Christ."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-surface-border/60 mt-6">
+                        <p class="font-heading font-bold text-sm text-primary">Teresa K.</p>
+                        <p class="text-xs text-text-muted">Catholic Personal Development Client</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-background border border-surface-border p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+                    <div class="space-y-4">
+                        <div class="text-accent flex space-x-1">
+                            ★★★★★
+                        </div>
+                        <p class="text-text-muted text-sm italic leading-relaxed">
+                            "Working with Sharon led to meaningful personal growth in my marriage and daily habits. She helped me reframe anxious thoughts into prayerful forward movement."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-surface-border/60 mt-6">
+                        <p class="font-heading font-bold text-sm text-primary">Elena R.</p>
+                        <p class="text-xs text-text-muted">Catholic Marriage Coaching Client</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="#" class="text-xs font-semibold text-primary hover:underline">Read full length verified client reviews and personal transformation stories &rarr;</a>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT / STRATEGY CALL FORM -->
-    <section id="contact" class="py-20 bg-surface/30 border-t border-surface-border/60">
+    <!-- DISTINCTION SECTION: COACHING vs THERAPY vs SPIRITUAL DIRECTION -->
+    <section class="py-16 bg-background">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-surface border border-surface-border rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8">
-                <div class="text-center space-y-3">
-                    <h2 class="font-heading text-3xl font-extrabold text-text">Initiate Engineering Consult</h2>
-                    <p class="text-text-muted text-sm">Speak directly with a Principal Cloud Architect to analyze your technical infrastructure and scaling blockers.</p>
+            <div class="bg-surface border border-surface-border rounded-2xl p-8 space-y-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
+                        i
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-primary">Understanding Catholic Life Coaching</h3>
                 </div>
 
-                <form onsubmit="event.preventDefault(); alert('Audit Request Submitted. An engineer will be in touch shorty.');" class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs font-semibold text-text-muted mb-2 uppercase">Work Email</label>
-                            <input type="email" required placeholder="cto@company.com" class="w-full bg-background border border-surface-border rounded-xl px-4 py-3 text-text focus:outline-none focus:border-accent text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-text-muted mb-2 uppercase">Organization / Company</label>
-                            <input type="text" required placeholder="Enterprise Corp" class="w-full bg-background border border-surface-border rounded-xl px-4 py-3 text-text focus:outline-none focus:border-accent text-sm">
-                        </div>
-                    </div>
+                <p class="text-text-muted text-sm leading-relaxed">
+                    It is essential to understand the distinct scope of life coaching so you can choose the best support for your situation:
+                </p>
 
-                    <div>
-                        <label class="block text-xs font-semibold text-text-muted mb-2 uppercase">Primary Technical Challenge</label>
-                        <select class="w-full bg-background border border-surface-border rounded-xl px-4 py-3 text-text focus:outline-none focus:border-accent text-sm">
-                            <option>Legacy Infrastructure Migration</option>
-                            <option>High Scale & Throughput Optimization</option>
-                            <option>Zero-Trust Security Implementation</option>
-                            <option>Custom AI/ML Pipeline Development</option>
-                        </select>
+                <div class="grid sm:grid-cols-2 gap-6 pt-2 text-xs text-text-muted leading-relaxed">
+                    <div class="bg-background p-4 rounded-xl border border-surface-border space-y-2">
+                        <strong class="text-primary font-bold block text-sm">What Coaching Focuses On:</strong>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Forward movement, actionable goals, and habits</li>
+                            <li>Identifying unhelpful thought patterns and mindset blocks</li>
+                            <li>Discernment in daily vocation, marriage, and work</li>
+                        </ul>
                     </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-text-muted mb-2 uppercase">Project Scope / Details</label>
-                        <textarea rows="4" placeholder="Describe your current tech stack and target outcomes..." class="w-full bg-background border border-surface-border rounded-xl px-4 py-3 text-text focus:outline-none focus:border-accent text-sm"></textarea>
+                    <div class="bg-background p-4 rounded-xl border border-surface-border space-y-2">
+                        <strong class="text-secondary font-bold block text-sm">Important Boundaries:</strong>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Does <strong>not</strong> diagnose or treat mental health conditions</li>
+                            <li>Does <strong>not</strong> replace therapy or professional medical care</li>
+                            <li>Is <strong>not</strong> spiritual direction (focuses on daily decisions rather than direct spiritual direction/theology)</li>
+                        </ul>
                     </div>
+                </div>
 
-                    <button type="submit" class="w-full py-4 rounded-xl font-heading font-semibold text-white bg-primary hover:bg-primary-hover shadow-lg shadow-primary/25 transition-all text-center">
-                        Request System Architecture Review
-                    </button>
-                </form>
+                <p class="text-xs text-text-muted italic border-t border-surface-border/60 pt-4">
+                    Catholic life coaching works wonderfully alongside appropriate licensed medical care, therapy, and pastoral support when needed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section id="faq" class="py-20 bg-surface/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-secondary font-heading">Common Questions</h2>
+                <h3 class="font-heading text-3xl font-extrabold text-primary">Frequently Asked Questions</h3>
+                <p class="text-text-muted text-sm">Clear, straightforward answers to help you decide if coaching is right for you.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        What is Catholic life coaching?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        Catholic life coaching is a supportive, goal-oriented partnership anchored in a Catholic understanding of the human person. It helps you gain clarity, overcome daily obstacles, align your thoughts with truth, and take practical steps toward fulfilling your vocation.
+                    </p>
+                </details>
+
+                <!-- Q2 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        What is mindset coaching?
+                        <summary-icon></summary-icon>
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        Mindset coaching focuses on uncovering negative, automatic thought loops—such as perfectionism or anxiety—and replacing them with constructive, truth-based perspectives that foster peace and intentional decision-making.
+                    </p>
+                </details>
+
+                <!-- Q3 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        How is coaching different from therapy?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        Therapy focuses on healing psychological trauma, mental health conditions, and past emotional wounds. Life coaching focuses on present habits, future goals, practical decision-making, and proactive growth.
+                    </p>
+                </details>
+
+                <!-- Q4 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        Is coaching the same as spiritual direction?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        No. Spiritual direction explores your interior prayer life and discernment of God's voice directly. Coaching centers on your daily life, routines, thought habits, and practical goals, while staying fully aligned with Church teachings.
+                    </p>
+                </details>
+
+                <!-- Q5 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        Why would I need a coach if God is the one who changes us?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        God frequently works through community, prudent mentors, and structured guidance. Coaching is a practical tool that helps you cooperate actively with His grace by clearing away mental noise and building virtuous habits.
+                    </p>
+                </details>
+
+                <!-- Q6 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        What can I discuss during coaching?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        You can bring topics like balancing motherhood and work, managing household stress, improving communication in marriage, overcoming feelings of unworthiness, or discerning a new chapter of life.
+                    </p>
+                </details>
+
+                <!-- Q7 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        How often will Sharon and I meet?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        Typically, clients meet weekly or bi-weekly depending on their selected package. This ensures enough time to implement action steps between sessions without feeling overwhelmed.
+                    </p>
+                </details>
+
+                <!-- Q8 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        Which coaching option is right for me?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        We recommend starting with a free discovery call. During that conversation, we’ll assess your goals and determine whether an individual session, 6-week, or 12-week program best fits your season.
+                    </p>
+                </details>
+
+                <!-- Q9 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        What happens during the free discovery call?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        It is a relaxed, 30-minute conversation. You share what you’re experiencing, ask any questions you have, and see if coaching feels like a helpful fit—with zero sales pressure.
+                    </p>
+                </details>
+
+                <!-- Q10 -->
+                <details class="group bg-background border border-surface-border rounded-xl p-5 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-primary text-base">
+                        What if I decide coaching is not the right fit?
+                        <span class="transition group-open:rotate-180 text-secondary">&darr;</span>
+                    </summary>
+                    <p class="mt-3 text-text-muted text-sm leading-relaxed border-t border-surface-border/50 pt-3">
+                        That is completely fine! There is never any obligation to enroll after a discovery call. My priority is ensuring you find the exact support you need.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERNAL LINKS & SEO AUXILIARY SECTION -->
+    <section class="py-12 bg-background border-t border-surface-border text-xs text-text-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <h4 class="font-heading font-bold text-primary text-sm uppercase">Recommended Internal Resources:</h4>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
+                    &bull; <strong>Catholic Marriage Coaching</strong>: Strengthening communication in marriage
+                </a>
+                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
+                    &bull; <strong>Catholic Coaching for Mothers</strong>: Balance & mindset for busy moms
+                </a>
+                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
+                    &bull; <strong>Catholic Discernment Coach</strong>: Navigating major life transitions
+                </a>
+                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
+                    &bull; <strong>About Sharon</strong>: Read Sharon's personal journey back to faith
+                </a>
+                <a href="#" class="p-3 bg-surface rounded-lg hover:border-primary border border-surface-border transition-colors">
+                    &bull; <strong>Get in Touch</strong>: Contact Sharon or request custom group workshops
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION SECTION -->
+    <section id="contact-anchor" class="py-20 bg-gradient-to-b from-surface to-background relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div class="max-w-2xl mx-auto space-y-4">
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-primary leading-tight">
+                    You Don’t Have to Have Everything Figured Out Before You Reach Out
+                </h2>
+                <p class="text-text-muted text-base leading-relaxed">
+                    If you feel stuck, overwhelmed, or uncertain about your next step, bring your honest self just as you are. Together, we’ll uncover clarity, peace, and renewed confidence in God’s design for your life.
+                </p>
+            </div>
+
+            <div class="bg-background border border-surface-border p-8 rounded-3xl shadow-xl max-w-lg mx-auto space-y-6">
+                <div class="space-y-2">
+                    <p class="font-heading font-bold text-lg text-primary">Take Your First Step Today</p>
+                    <p class="text-xs text-text-muted">Select a time that works best for your schedule.</p>
+                </div>
+
+                <a href="#" class="block w-full py-4 rounded-full font-heading text-sm font-bold text-white bg-secondary hover:bg-secondary/90 shadow-lg transition-all text-center">
+                    Schedule Your Free Discovery Call
+                </a>
+
+                <div class="pt-2">
+                    <p class="text-xs text-text-muted font-medium italic">
+                        Free, 30 minutes, and no pressure to enroll.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-background border-t border-surface-border/60 py-12 text-sm text-text-muted">
+    <footer class="bg-surface border-t border-surface-border py-12 text-xs text-text-muted">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-primary to-accent flex items-center justify-center text-white font-bold text-xs">
-                        A
+                    <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm">
+                        S
                     </div>
-                    <span class="font-heading font-bold text-text">Apex Digital Inc.</span>
+                    <div>
+                        <span class="font-heading font-bold text-primary block text-sm">Sharon Coaching</span>
+                        <span>Faith-Based Life Coaching for Women</span>
+                    </div>
                 </div>
 
-                <div class="flex space-x-6 text-xs">
-                    <a href="#" class="hover:text-text transition-colors">Security Standards</a>
-                    <a href="#" class="hover:text-text transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-text transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-text transition-colors">System Status</a>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary transition-colors">Terms & Disclaimer</a>
+                    <a href="#" class="hover:text-primary transition-colors">Contact</a>
                 </div>
 
-                <p class="text-xs">&copy; 2026 Apex Digital. All rights reserved.</p>
+                <p>&copy; 2026 Sharon Coaching. All rights reserved.</p>
             </div>
         </div>
     </footer>
